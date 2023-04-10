@@ -26,9 +26,8 @@ export default function WithSubnavigation() {
 	const { isOpen, onToggle } = useDisclosure();
 
 	return (
-		<Box>
+		<>
 			<Flex
-				bg={useColorModeValue('white', 'gray.800')}
 				color={useColorModeValue('gray.600', 'white')}
 				minH={'60px'}
 				py={{ base: 2 }}
@@ -101,7 +100,7 @@ export default function WithSubnavigation() {
 			<Collapse in={isOpen} animateOpacity>
 				<MobileNav />
 			</Collapse>
-		</Box>
+		</>
 	);
 }
 
