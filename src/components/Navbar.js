@@ -21,6 +21,7 @@ import {
 	ChevronDownIcon,
 	ChevronRightIcon,
 } from '@chakra-ui/icons';
+import Logo from '../assets/svg/logoipsum-245.svg';
 
 export default function WithSubnavigation() {
 	const { isOpen, onToggle } = useDisclosure();
@@ -57,7 +58,10 @@ export default function WithSubnavigation() {
 						fontFamily={'heading'}
 						color={useColorModeValue('gray.800', 'white')}
 					>
-						<Link href={'/'}>Logo</Link>
+						<Link href={'/'}>
+							<Logo />
+							{/* <Text>WashStacks</Text> */}
+						</Link>
 					</Text>
 
 					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
