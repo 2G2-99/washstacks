@@ -1,7 +1,7 @@
 import { Box, Button } from '@chakra-ui/react';
 import Head from 'next/head';
 
-import Navbar from './Navbar';
+import Navbar from './navigation/Navbar';
 import { Link } from '@chakra-ui/next-js';
 import Footer from './Footer';
 export const siteTitle = 'WashStacks';
@@ -24,6 +24,7 @@ export default function Layout({ children, home }) {
 				backdropSaturate={'180%'}
 				w="100%"
 				zIndex={10}
+				boxShadow={'lg'}
 			>
 				{home || !home ? <Navbar /> : null}
 			</Box>
