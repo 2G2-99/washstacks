@@ -1,40 +1,33 @@
 const NAV_ITEMS = [
 	{
-		label: 'Inspiration',
+		label: 'How it works',
+	},
+	{
+		label: 'Prices & Services',
 		children: [
 			{
-				label: 'Explore Design Work',
-				subLabel: 'Trending Design to inspire you',
+				label: 'Wash',
+				subLabel: 'For everyday laundry, bedsheets and towels',
 				href: '#',
 			},
 			{
-				label: 'New & Noteworthy',
-				subLabel: 'Up-and-coming Designers',
+				label: 'Wash & Iron',
+				subLabel: 'For everyday laundry that requires ironing',
+				href: '#',
+			},
+			{
+				label: 'Dry Cleaning',
+				subLabel: 'For delicate items and fabrics',
 				href: '#',
 			},
 		],
 	},
 	{
-		label: 'Find Work',
-		children: [
-			{
-				label: 'Job Board',
-				subLabel: 'Find your dream design job',
-				href: '#',
-			},
-			{
-				label: 'Freelance Projects',
-				subLabel: 'An exclusive list for contract work',
-				href: '#',
-			},
-		],
-	},
-	{
-		label: 'Learn Design',
+		label: 'About us',
 		href: '#',
 	},
 	{
-		label: 'Hire Designers',
+		label: 'FAQ',
 		href: '#',
 	},
 ];

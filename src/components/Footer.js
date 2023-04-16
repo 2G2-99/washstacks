@@ -92,22 +92,20 @@ export default function Footer() {
 					_before={{
 						content: '""',
 						borderBottom: '1px solid',
-						borderColor: useColorModeValue('gray.200', 'gray.700'),
+						borderColor: 'gray.800',
 						flexGrow: 1,
 						mr: 8,
 					}}
 					_after={{
 						content: '""',
 						borderBottom: '1px solid',
-						borderColor: useColorModeValue('gray.200', 'gray.700'),
+						borderColor: 'gray.800',
 						flexGrow: 1,
 						ml: 8,
 					}}
 				>
-					{/*  */}
 					<Logo />
 					<Text ml={'.125em'}>WashStacks</Text>
-					{/*  */}
 				</Flex>
 				<Box
 					bg={useColorModeValue('gray.50', 'gray.900')}
@@ -140,17 +138,3 @@ export default function Footer() {
 		</Box>
 	);
 }
-
-/**
- * <Stack direction={'row'} spacing={6}>
-						<SocialButton label={'Twitter'} href={'#'}>
-							<FaTwitter />
-						</SocialButton>
-						<SocialButton label={'YouTube'} href={'#'}>
-							<FaYoutube />
-						</SocialButton>
-						<SocialButton label={'Instagram'} href={'#'}>
-							<FaInstagram />
-						</SocialButton>
-					</Stack>
- */
