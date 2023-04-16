@@ -14,23 +14,23 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import Logo from '../../assets/svg/logoipsum-245.svg';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
-import { useMotionValueEvent, useScroll } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
-	// const [navbar, setNavbar] = useState();
 	const { isOpen, onToggle } = useDisclosure();
+	const [scrollPosition, setScrollPosition] = useState(0);
 
-	const { scrollY } = useScroll();
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollPosition(window.scrollY);
+		};
 
-	const changeBackground = latest => {
-		// scrollY >= 60 ? setNavbar(true) : setNavbar(false);
+		window.addEventListener('scroll', handleScroll);
 
-		console.log('Page scroll:', latest);
-	};
-
-	// !
-	useMotionValueEvent(scrollY, 'change', changeBackground);
-	// !
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [scrollPosition]);
 
 	return (
 		<>
@@ -39,10 +39,11 @@ const Navbar = () => {
 				minH={'60px'}
 				py={{ base: 2 }}
 				px={{ base: 4 }}
-				borderBottom={1}
-				borderStyle={'solid'}
-				borderColor={useColorModeValue('gray.200', 'gray.900')}
 				align={'center'}
+				background={scrollPosition === 0 ? 'white' : 'transparent'}
+				boxShadow={scrollPosition === 0 ? 'none' : 'xl'}
+				backdropFilter="auto"
+				backdropBlur={'6px'}
 			>
 				<Flex
 					flex={{ base: 1, md: 'auto' }}

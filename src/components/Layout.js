@@ -1,4 +1,4 @@
-import { Box, Button } from '@chakra-ui/react';
+import { Box, Button, useColorModeValue } from '@chakra-ui/react';
 import Head from 'next/head';
 
 import Navbar from './navigation/Navbar';
@@ -15,17 +15,7 @@ export default function Layout({ children, home }) {
 					content="Laundry & Dry cleaning delivery service"
 				/>
 			</Head>
-			<Box
-				as="header"
-				position="fixed"
-				backgroundColor="rgba(255,255, 255, 0.7)"
-				backdropFilter="auto"
-				backdropBlur={'4px'}
-				backdropSaturate={'180%'}
-				w="100%"
-				zIndex={10}
-				boxShadow={'lg'}
-			>
+			<Box as="header" position="fixed" w="100%" zIndex={10}>
 				{home || !home ? <Navbar /> : null}
 			</Box>
 			<main>
