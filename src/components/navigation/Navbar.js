@@ -32,6 +32,9 @@ const Navbar = () => {
 		};
 	}, [scrollPosition]);
 
+	const bgColor = scrollPosition === 0 ? 'white' : 'transparent';
+	const boxShadow = scrollPosition === 0 ? 'none' : 'xl';
+
 	return (
 		<>
 			<Flex
@@ -40,10 +43,11 @@ const Navbar = () => {
 				py={{ base: 2 }}
 				px={{ base: 4 }}
 				align={'center'}
-				background={scrollPosition === 0 ? 'white' : 'transparent'}
-				boxShadow={scrollPosition === 0 ? 'none' : 'xl'}
+				background={bgColor}
+				boxShadow={boxShadow}
 				backdropFilter="auto"
 				backdropBlur={'6px'}
+				transition="all 0.2s ease-in-out"
 			>
 				<Flex
 					flex={{ base: 1, md: 'auto' }}
