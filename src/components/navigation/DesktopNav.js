@@ -3,6 +3,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import {
 	Box,
 	Flex,
+	HStack,
 	Icon,
 	Link,
 	Popover,
@@ -19,7 +20,7 @@ const DesktopNav = () => {
 	const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
 	return (
-		<Stack direction={'row'} spacing={4}>
+		<HStack spacing={4}>
 			{NAV_ITEMS.map(navItem => (
 				<Box key={navItem.label}>
 					<Popover trigger={'hover'} placement={'bottom-start'}>
@@ -42,10 +43,10 @@ const DesktopNav = () => {
 						{navItem.children && (
 							<PopoverContent
 								border={0}
-								boxShadow={'xl'}
+								boxShadow={'lg'}
 								bg={popoverContentBgColor}
 								p={4}
-								rounded={'xl'}
+								rounded={'md'}
 								minW={'sm'}
 							>
 								<Stack>
@@ -58,7 +59,7 @@ const DesktopNav = () => {
 					</Popover>
 				</Box>
 			))}
-		</Stack>
+		</HStack>
 	);
 };
 
@@ -72,7 +73,7 @@ export const DesktopSubNav = ({ label, href, subLabel }) => {
 			rounded={'md'}
 			_hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
 		>
-			<Stack direction={'row'} align={'center'}>
+			<HStack align={'center'}>
 				<Box>
 					<Text
 						transition={'all .3s ease'}
@@ -81,7 +82,7 @@ export const DesktopSubNav = ({ label, href, subLabel }) => {
 					>
 						{label}
 					</Text>
-					<Text fontSize={'sm'}>{subLabel}</Text>
+					<Text fontSize={'xs'}>{subLabel}</Text>
 				</Box>
 				<Flex
 					transition={'all .3s ease'}
@@ -94,7 +95,7 @@ export const DesktopSubNav = ({ label, href, subLabel }) => {
 				>
 					<Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
 				</Flex>
-			</Stack>
+			</HStack>
 		</Link>
 	);
 };

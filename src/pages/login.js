@@ -1,23 +1,20 @@
 import {
 	Flex,
-	FormControl,
-	FormLabel,
-	Input,
+	HStack,
 	Stack,
 	Button,
 	Heading,
 	Text,
 	useColorModeValue,
 	Link,
-	Icon,
 	VStack,
-	HStack,
+	Icon,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import Layout from '@/components/Layout';
 import { GiEnvelope } from 'react-icons/gi';
 import { FcGoogle } from 'react-icons/fc';
 import { BsApple, BsFacebook } from 'react-icons/bs';
+import Layout from '@/components/Layout';
 
 export default function SignupCard() {
 	return (
@@ -31,7 +28,7 @@ export default function SignupCard() {
 				<Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
 					<Stack align={'center'}>
 						<Heading fontSize={'4xl'} textAlign={'center'}>
-							Sign up
+							Log in
 						</Heading>
 					</Stack>
 
@@ -83,10 +80,6 @@ export default function SignupCard() {
 							<Text>or</Text>
 						</Flex>
 						<VStack as={'form'}>
-							<FormControl id="email" isRequired>
-								<FormLabel>Email address</FormLabel>
-								<Input type="email" />
-							</FormControl>
 							<Stack>
 								<Button
 									loadingText="Submitting"
@@ -103,11 +96,11 @@ export default function SignupCard() {
 							</Stack>
 							<VStack pt={6} spacing={'.05rem'}>
 								<Text align={'center'}>
-									Already a user?{' '}
-									<Link color={'blue.400'} href="./login">
-										Login
-									</Link>
+									Don't have a WashStacks account yet?
 								</Text>
+								<Link color={'blue.400'} href="./sign-up">
+									Sign up
+								</Link>
 							</VStack>
 						</VStack>
 					</VStack>

@@ -64,11 +64,7 @@ const Navbar = () => {
 					/>
 				</Flex>
 				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-					<Text
-						textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-						fontFamily={'heading'}
-						color={useColorModeValue('gray.800', 'white')}
-					>
+					<Text textAlign={useBreakpointValue({ base: 'center', md: 'left' })}>
 						<Link href={'/'}>
 							<Logo />
 							{/* <Text>WashStacks</Text> */}
@@ -91,9 +87,9 @@ const Navbar = () => {
 						fontSize={'sm'}
 						fontWeight={400}
 						variant={'link'}
-						href={'#'}
+						href={'/login'}
 					>
-						Sign In
+						Log in
 					</Button>
 					<Button
 						as={'a'}
@@ -102,12 +98,12 @@ const Navbar = () => {
 						fontWeight={600}
 						color={'white'}
 						bg={'pink.400'}
-						href={'/sign-up'}
+						href={'#'}
 						_hover={{
 							bg: 'pink.300',
 						}}
 					>
-						Sign Up
+						Book now
 					</Button>
 				</Stack>
 			</Flex>
