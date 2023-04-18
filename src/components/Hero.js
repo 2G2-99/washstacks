@@ -1,58 +1,149 @@
 import {
-	Stack,
 	Flex,
-	Button,
 	Text,
 	VStack,
 	useBreakpointValue,
+	Heading,
+	HStack,
+	Container,
+	Box,
+	Icon,
+	SimpleGrid,
 } from '@chakra-ui/react';
+import { FaBolt } from 'react-icons/fa';
+import { TbMoonFilled } from 'react-icons/tb';
+import { BiChevronRight } from 'react-icons/bi';
+import { HiChevronRight } from 'react-icons/hi';
+import { Link } from '@chakra-ui/next-js';
 
 export default function Hero() {
 	return (
 		<Flex
+			id="hero"
 			w={'full'}
 			h={'100vh'}
-			backgroundImage={
-				'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
-			}
-			backgroundSize={'cover'}
-			backgroundPosition={'center center'}
+			backgroundColor={'brand.100'}
+			pt={useBreakpointValue({ base: '4.5em' })}
 		>
-			<VStack
-				w={'full'}
-				justify={'center'}
-				px={useBreakpointValue({ base: 4, md: 8 })}
-				bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
-			>
-				<Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
-					<Text
-						color={'white'}
+			<VStack w={'full'}>
+				<Container centerContent mt={'2em'}>
+					<Heading
+						as={'h1'}
+						mb={'1em'}
+						color={'brand.900'}
 						fontWeight={700}
 						lineHeight={1.2}
-						fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
+						fontSize={useBreakpointValue({ base: '2.625rem', md: '4.5rem' })}
 					>
-						Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-						eiusmod tempor
-					</Text>
-					<Stack direction={'row'}>
-						<Button
-							bg={'blue.400'}
-							rounded={'full'}
-							color={'white'}
-							_hover={{ bg: 'blue.500' }}
+						Laundry & dry cleaning with 24h delivery in
+						<Text color={'brand.400'}>London</Text>
+					</Heading>
+				</Container>
+				<Container
+					maxW={useBreakpointValue({ base: 'full' })}
+					backgroundColor={'white'}
+					py={'1.75em'}
+				>
+					<VStack align={'start'}>
+						<Flex
+							alignItems={'center'}
+							direction={'row'}
+							wrap={'wrap'}
+							mb={'.9rem'}
 						>
-							Show me more
-						</Button>
-						<Button
-							bg={'whiteAlpha.300'}
-							rounded={'full'}
-							color={'white'}
-							_hover={{ bg: 'whiteAlpha.500' }}
+							<Text as={'span'} fontWeight={'thin'}>
+								Schedule your collection in{' '}
+								<Text as={'span'} fontWeight={'bold'}>
+									London
+								</Text>
+							</Text>
+						</Flex>
+						<SimpleGrid
+							className="slots"
+							w={'100%'}
+							minChildWidth={'100%'}
+							spacing={2}
 						>
-							Show me more
-						</Button>
-					</Stack>
-				</Stack>
+							<Link
+								href={'#'}
+								borderWidth={'1px'}
+								borderColor={'brand.200'}
+								borderRadius={'md'}
+								_hover={{
+									textDecoration: 'none',
+									backgroundColor: 'brand.250',
+									borderColor: 'brand.250',
+								}}
+							>
+								<Flex
+									id="earliest"
+									className="slot"
+									direction={'row'}
+									align={'center'}
+									justify={'space-between'}
+									py={'.5rem'}
+									px={'1rem'}
+								>
+									<Box
+										className="slot-content"
+										w={'100%'}
+										color={'brand.800'}
+										fontWeight={'bold'}
+									>
+										<Box className="slot-header" textTransform={'uppercase'}>
+											<Icon as={FaBolt} mr={'.5rem'} />
+											<Text as={'span'}>Earliest</Text>
+										</Box>
+										<Box className="slot-timeslot">
+											<Text>In the next 45min</Text>
+										</Box>
+									</Box>
+									<Icon as={HiChevronRight} />
+								</Flex>
+							</Link>
+							<Link
+								href={'#'}
+								borderWidth={'1px'}
+								borderColor={'brand.200'}
+								borderRadius={'md'}
+								_hover={{
+									textDecoration: 'none',
+									backgroundColor: 'brand.250',
+									borderColor: 'brand.250',
+								}}
+							>
+								<Flex
+									id="last"
+									className="slot"
+									direction={'row'}
+									align={'center'}
+									justify={'space-between'}
+									py={'.5rem'}
+									px={'1rem'}
+								>
+									<Box
+										className="slot-content"
+										w={'100%'}
+										color={'brand.800'}
+										fontWeight={'bold'}
+									>
+										<Box className="slot-header" textTransform={'uppercase'}>
+											<Icon as={TbMoonFilled} mr={'.5rem'} />
+											<Text as={'span'}>Last</Text>
+										</Box>
+										<Box className="slot-timeslot">
+											<Text>20:00 - 23:00</Text>
+										</Box>
+									</Box>
+									<Icon as={HiChevronRight} />
+								</Flex>
+							</Link>
+							<Box className="footer">
+								<Link href={'#'}>See all slots</Link>
+							</Box>
+						</SimpleGrid>
+					</VStack>
+				</Container>
 			</VStack>
 		</Flex>
 	);
