@@ -1,6 +1,6 @@
 import { Heading, Text, useBreakpointValue } from '@chakra-ui/react';
 
-const HeroHeading = () => {
+export default function HeroHeading() {
 	return (
 		<Heading
 			as={'h1'}
@@ -14,6 +14,4 @@ const HeroHeading = () => {
 			<Text color={'brand.400'}>London</Text>
 		</Heading>
 	);
-};
-
-export default HeroHeading;
+}

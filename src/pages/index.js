@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<Layout home>
 			<Head>
-				<title>{siteTitle}</title>
+				<title>WashStacks</title>
 			</Head>
 			<Hero />
 			<ScheduleAndFeatures />

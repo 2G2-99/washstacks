@@ -10,21 +10,21 @@ import {
 	useDisclosure,
 } from '@chakra-ui/react';
 
-const { default: NAV_ITEMS } = require('@/data/navItems');
+import NAV_ITEMS from '@/data/navItems';
 
-const MobileNav = () => {
+export default function MobileNav() {
 	return (
 		<Stack
 			bg={useColorModeValue('white', 'gray.800')}
 			p={4}
 			display={{ md: 'none' }}
 		>
-			{NAV_ITEMS.map(navItem => (
+			{NAV_ITEMS.map((navItem) => (
 				<MobileNavItem key={navItem.label} {...navItem} />
 			))}
 		</Stack>
 	);
-};
+}
 
 const MobileNavItem = ({ label, children, href }) => {
 	const { isOpen, onToggle } = useDisclosure();
@@ -68,7 +68,7 @@ const MobileNavItem = ({ label, children, href }) => {
 					align={'start'}
 				>
 					{children &&
-						children.map(child => (
+						children.map((child) => (
 							<Link key={child.label} py={2} href={child.href}>
 								{child.label}
 							</Link>
@@ -78,5 +78,3 @@ const MobileNavItem = ({ label, children, href }) => {
 		</Stack>
 	);
 };
-
-export default MobileNav;

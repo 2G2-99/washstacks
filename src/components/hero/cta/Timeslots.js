@@ -5,7 +5,7 @@ import { TbMoonFilled } from 'react-icons/tb';
 
 import Slot from './Slot';
 
-const Timeslots = () => {
+export default function Timeslots() {
 	return (
 		<VStack align={'start'}>
 			{/* Header */}
@@ -42,6 +42,4 @@ const Timeslots = () => {
 			</SimpleGrid>
 		</VStack>
 	);
-};
-
-export default Timeslots;
+}

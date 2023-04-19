@@ -2,7 +2,7 @@ import { Link } from '@chakra-ui/next-js';
 import { Box, Flex, Icon, Text } from '@chakra-ui/react';
 import { HiChevronRight } from 'react-icons/hi';
 
-const Slot = ({ url, id, icon, timeslot }) => {
+export default function Slot({ url, id, icon, timeslot }) {
 	return (
 		<Link
 			href={url}
@@ -42,6 +42,4 @@ const Slot = ({ url, id, icon, timeslot }) => {
 			</Flex>
 		</Link>
 	);
-};
-
-export default Slot;
+}

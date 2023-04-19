@@ -15,7 +15,7 @@ import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { useEffect, useState } from 'react';
 
-const Navbar = () => {
+export default function Navbar() {
 	const { isOpen, onToggle } = useDisclosure();
 	const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -112,6 +112,4 @@ const Navbar = () => {
 			</Collapse>
 		</>
 	);
-};
-
-export default Navbar;
+}

@@ -16,9 +16,10 @@ export default function Hero() {
 					<HeroHeading />
 				</Container>
 				<Container
-					maxW={useBreakpointValue({ base: 'full' })}
+					maxW={useBreakpointValue({ base: 'full', md: 'sm' })}
 					backgroundColor={'white'}
 					py={'1.75em'}
+					borderRadius={{ md: '.25em' }}
 				>
 					<Timeslots />
 				</Container>
