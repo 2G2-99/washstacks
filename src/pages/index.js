@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/Layout';
-import Hero from '@/components/Hero';
+import Hero from '@/components/hero/Hero';
 import ScheduleAndFeatures from '@/components/sections/features';
 
 export default function Home() {

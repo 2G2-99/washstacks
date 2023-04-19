@@ -6,7 +6,6 @@ import {
 	Stack,
 	Collapse,
 	Link,
-	useColorModeValue,
 	useBreakpointValue,
 	useDisclosure,
 } from '@chakra-ui/react';

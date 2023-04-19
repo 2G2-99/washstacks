@@ -63,7 +63,7 @@ export default function SignupCard() {
 							</Button>
 						</HStack>
 						<Flex
-							width={'100%'}
+							w={'100%'}
 							align={'center'}
 							_before={{
 								content: '""',
