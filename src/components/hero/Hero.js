@@ -27,3 +27,5 @@ export default function Hero() {
 		</Flex>
 	);
 }
+
+// TODO: Fix layout of slot picker
