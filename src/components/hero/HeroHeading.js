@@ -7,8 +7,9 @@ export default function HeroHeading() {
 			mb={'1em'}
 			color={'brand.900'}
 			fontWeight={700}
-			lineHeight={1.2}
-			fontSize={useBreakpointValue({ base: '2.625rem', md: '4.5rem' })}
+			lineHeight={1.05}
+			letterSpacing={'wider'}
+			fontSize={useBreakpointValue({ base: '2.625rem', sm: '4rem' })}
 		>
 			Laundry & dry cleaning with 24h delivery in
 			<Text color={'brand.400'}>London</Text>
