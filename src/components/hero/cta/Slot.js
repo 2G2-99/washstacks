@@ -1,5 +1,5 @@
 import { Link } from '@chakra-ui/next-js';
-import { Box, Flex, Icon, Text } from '@chakra-ui/react';
+import { Box, Flex, Icon, Text, useBreakpointValue } from '@chakra-ui/react';
 import { HiChevronRight } from 'react-icons/hi';
 
 export default function Slot({ url, id, icon, header, timeslot }) {
@@ -27,14 +27,14 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 			>
 				<Box
 					className="slot-content"
-					w={'100%'}
+					// w={'100%'}
 					fontWeight={'bold'}
-					letterSpacing={'wider'}
+					// letterSpacing={'wider'}
 				>
 					<Flex
 						className="slot-header"
 						textTransform={'uppercase'}
-						fontSize={{ base: '.875rem', md: '1rem' }}
+						fontSize={{ base: '.75rem', md: '1rem' }}
 						color={'brand.850'}
 						_groupHover={{ color: 'brand.100' }}
 					>
@@ -42,6 +42,7 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 						<Text as={'span'}>{header}</Text>
 					</Flex>
 					<Flex
+						fontSize={useBreakpointValue({ base: '.875rem' })}
 						className="slot-timeslot"
 						lineHeight={'1.125rem'}
 						direction={'row'}

@@ -4,15 +4,16 @@ export default function HeroHeading() {
 	return (
 		<Heading
 			as={'h1'}
-			mb={'1em'}
+			mb={'1rem'}
 			color={'brand.900'}
-			fontWeight={700}
-			lineHeight={1.05}
+			lineHeight={1}
 			letterSpacing={'wider'}
-			fontSize={useBreakpointValue({ base: '2.625rem', sm: '3.6rem' })}
+			fontSize={useBreakpointValue({ base: '2.625rem', sm: '3.5rem' })}
 		>
 			Laundry & dry cleaning with 24h delivery in
-			<Text color={'brand.400'}>London</Text>
+			<Text h={'2em'} color={'brand.400'}>
+				London
+			</Text>
 		</Heading>
 	);
 }

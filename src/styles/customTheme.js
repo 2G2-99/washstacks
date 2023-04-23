@@ -12,7 +12,7 @@ const customTheme = extendTheme({
 			600: '#d00000',
 			700: '#80b918',
 			800: '#1B1B1B',
-			850: '#a8aaaf',
+			850: '#777a7f',
 			900: '#F7F7F7',
 		},
 	},

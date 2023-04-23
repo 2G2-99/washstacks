@@ -12,46 +12,50 @@ import Timeslots from './cta/Timeslots';
 
 export default function Hero() {
 	return (
-		<Flex
+		<Box
 			id="hero"
 			w={'full'}
 			backgroundColor={'brand.100'}
 			pt={useBreakpointValue({ base: '4.5em' })}
 		>
-			<Box
-				w={useBreakpointValue({ base: 'full', md: '50%' })}
-				mx={useBreakpointValue({ md: '1.5em' })}
+			<Container
+				maxW={useBreakpointValue({ base: 'full', sm: 'container.sm' })}
 			>
-				<Flex
-					mt={useBreakpointValue({ base: '2em', md: '7em' })}
-					mx={useBreakpointValue({ base: '.75em' })}
-					px={useBreakpointValue({ md: '1em' })}
-				>
-					<HeroHeading />
+				<Flex mx={useBreakpointValue({ md: '1.5em' })} wrap direction={'row'}>
+					<Box
+						mt={useBreakpointValue({ base: '2em', sm: '4em' })}
+						px={useBreakpointValue({ base: '.75em' })}
+						w={useBreakpointValue({ base: 'full', sm: '50%' })}
+					>
+						<HeroHeading />
+						<Container
+							display={{ base: 'none', sm: 'block' }}
+							backgroundColor={'white'}
+							py={useBreakpointValue({ base: '1.75em', sm: '1.25em' })}
+							borderRadius={useBreakpointValue({ sm: 'sm' })}
+							mb={useBreakpointValue({ sm: '7em' })}
+						>
+							<Timeslots />
+						</Container>
+					</Box>
+					<Flex
+						display={useBreakpointValue({ base: 'none', sm: 'block' })}
+						w={'50%'}
+						px={'.75em'}
+						alignSelf={'flex-start'}
+						mt={useBreakpointValue({ base: '2em', sm: '4em' })}
+					>
+						<Image
+							src="https://prod-cdn.laundryheap.com/assets/landing/hero/europe_2x-45f94d1b0282fe5831ca474014e73457fdc71072ae5025cb6cc2ba48d283f5a8.jpg"
+							fallbackSrc="../../assets/img/laundryheap-europe_2x.jpg"
+							alt="A european, blonde girl holding a stack of blue jeans"
+						/>
+					</Flex>
 				</Flex>
-				<Container
-					maxW={useBreakpointValue({ base: 'full', md: '90%' })}
-					backgroundColor={'white'}
-					py={useBreakpointValue({ base: '1.75em', sm: '1.25em' })}
-					borderRadius={useBreakpointValue({ md: 'md' })}
-					mb={useBreakpointValue({ md: '7.7em' })}
-				>
-					<Timeslots />
-				</Container>
-			</Box>
-			<Flex
-				display={useBreakpointValue({ base: 'none', md: 'block' })}
-				w={'50%'}
-				px={'2em'}
-				alignSelf={'flex-start'}
-				mt={'7em'}
-			>
-				<Image
-					src="https://prod-cdn.laundryheap.com/assets/landing/hero/europe_2x-45f94d1b0282fe5831ca474014e73457fdc71072ae5025cb6cc2ba48d283f5a8.jpg"
-					fallbackSrc="../../assets/img/laundryheap-europe_2x.jpg"
-					alt="A european, blonde girl holding a stack of blue jeans"
-				/>
-			</Flex>
-		</Flex>
+			</Container>
+			<Container w={'full'} bg={'white'} py={'1.75em'} display={{ sm: 'none' }}>
+				<Timeslots />
+			</Container>
+		</Box>
 	);
 }

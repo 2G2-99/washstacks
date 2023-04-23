@@ -9,10 +9,16 @@ export default function Timeslots() {
 	return (
 		<VStack align={'start'}>
 			{/* Header */}
-			<Flex alignItems={'center'} direction={'row'} wrap={'wrap'} mb={'.25rem'}>
-				<Text as={'span'}>
+			<Flex
+				alignItems={'center'}
+				direction={'row'}
+				wrap={'wrap'}
+				mb={'.25rem'}
+				fontSize={'.875rem'}
+			>
+				<Text as={'span'} color={'brand.850'}>
 					Schedule your collection in{' '}
-					<Text as={'span'} fontWeight={'bold'}>
+					<Text as={'span'} fontWeight={'bold'} color={'brand.800'}>
 						London
 					</Text>
 				</Text>
@@ -38,7 +44,7 @@ export default function Timeslots() {
 					header={'Last'}
 					timeslot={'20:00 - 23:00'}
 				/>
-				<Box className="footer" color={'brand.100'}>
+				<Box className="footer" color={'brand.100'} fontSize={'.875rem'}>
 					<Link href={'#'}>See all slots</Link>
 				</Box>
 			</SimpleGrid>
