@@ -31,7 +31,7 @@ export default function Navbar() {
 		};
 	}, [scrollPosition]);
 
-	const bgColor = scrollPosition === 0 ? 'white' : 'transparent';
+	const bgColor = scrollPosition === 0 ? 'brand.100' : 'transparent';
 	const boxShadow = scrollPosition === 0 ? 'none' : 'xl';
 
 	return (
@@ -39,8 +39,8 @@ export default function Navbar() {
 			<Flex
 				as={'nav'}
 				minH={'60px'}
-				py={{ base: 2 }}
-				px={{ base: 4 }}
+				py={{ base: '1.5rem', md: '2rem' }}
+				px={{ base: '1rem', md: '2.25rem' }}
 				align={'center'}
 				background={bgColor}
 				boxShadow={boxShadow}

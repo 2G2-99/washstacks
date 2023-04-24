@@ -9,7 +9,7 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 			href={url}
 			borderWidth={'1px'}
 			borderColor={'brand.200'}
-			borderRadius={'md'}
+			borderRadius={'.25rem'}
 			_hover={{
 				textDecoration: 'none',
 				backgroundColor: 'brand.250',
@@ -22,19 +22,19 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 				direction={'row'}
 				align={'center'}
 				justify={'space-between'}
-				py={'.5rem'}
+				py={'.3rem'}
 				px={'1rem'}
 			>
 				<Box
 					className="slot-content"
-					// w={'100%'}
+					w={'100%'}
 					fontWeight={'bold'}
 					// letterSpacing={'wider'}
 				>
 					<Flex
 						className="slot-header"
 						textTransform={'uppercase'}
-						fontSize={{ base: '.75rem', md: '1rem' }}
+						fontSize={'.75rem'}
 						color={'brand.850'}
 						_groupHover={{ color: 'brand.100' }}
 					>

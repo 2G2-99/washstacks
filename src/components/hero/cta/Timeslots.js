@@ -28,7 +28,7 @@ export default function Timeslots() {
 				className="slots"
 				w={'100%'}
 				columns={{ base: 1, sm: 2 }}
-				spacing={3}
+				spacing={2}
 			>
 				<Slot
 					url={'#'}

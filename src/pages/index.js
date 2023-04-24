@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/Layout';
+import Layout from '../components/Layout';
 import Hero from '@/components/hero/Hero';
 import ScheduleAndFeatures from '@/components/sections/features';
 
 export default function Home() {
 	return (
-		<Layout home>
+		<Layout>
 			<Head>
 				<title>WashStacks</title>
 			</Head>
