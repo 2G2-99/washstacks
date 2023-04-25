@@ -10,7 +10,8 @@ import {
 	useDisclosure,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import Logo from '../../assets/svg/logoipsum-245.svg';
+import Logo from '../../assets/svg/brand/Logo.svg';
+import Logo_v1 from '../../assets/svg/brand/v1.svg';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { useEffect, useState } from 'react';
@@ -33,6 +34,7 @@ export default function Navbar() {
 
 	const bgColor = scrollPosition === 0 ? 'brand.100' : 'transparent';
 	const boxShadow = scrollPosition === 0 ? 'none' : 'xl';
+	const brandLogo = scrollPosition === 0 ? <Logo /> : <Logo_v1 />;
 
 	return (
 		<>
@@ -64,10 +66,7 @@ export default function Navbar() {
 				</Flex>
 				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
 					<Text textAlign={useBreakpointValue({ base: 'center', md: 'left' })}>
-						<Link href={'/'}>
-							<Logo />
-							{/* <Text>WashStacks</Text> */}
-						</Link>
+						<Link href={'/'}>{brandLogo}</Link>
 					</Text>
 
 					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>

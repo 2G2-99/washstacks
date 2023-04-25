@@ -14,7 +14,7 @@ import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 import AppStoreBadge from '../assets/svg/app-store-black.svg';
 import PlayStoreBadge from '../assets/svg/google-play-black.svg';
-import Logo from '../assets/svg/logoipsum-245.svg';
+import Logo from '../assets/svg/brand/v1.svg';
 
 const ListHeader = ({ children }) => {
 	return (
@@ -105,7 +105,6 @@ export default function Footer() {
 					}}
 				>
 					<Logo />
-					<Text ml={'.125em'}>WashStacks</Text>
 				</Flex>
 				<Box
 					bg={useColorModeValue('gray.50', 'gray.900')}
