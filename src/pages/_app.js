@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 
 // Theme
-import { customTheme } from '@/styles/customTheme';
+import customTheme from '@/styles/customTheme';
 
 // Fonts
 import '@fontsource/cabin';

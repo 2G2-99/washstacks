@@ -6,7 +6,6 @@ import {
 	Stack,
 	Collapse,
 	Link,
-	useColorModeValue,
 	useBreakpointValue,
 	useDisclosure,
 } from '@chakra-ui/react';
@@ -16,7 +15,7 @@ import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { useEffect, useState } from 'react';
 
-const Navbar = () => {
+export default function Navbar() {
 	const { isOpen, onToggle } = useDisclosure();
 	const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -32,7 +31,7 @@ const Navbar = () => {
 		};
 	}, [scrollPosition]);
 
-	const bgColor = scrollPosition === 0 ? 'white' : 'transparent';
+	const bgColor = scrollPosition === 0 ? 'brand.100' : 'transparent';
 	const boxShadow = scrollPosition === 0 ? 'none' : 'xl';
 
 	return (
@@ -40,8 +39,8 @@ const Navbar = () => {
 			<Flex
 				as={'nav'}
 				minH={'60px'}
-				py={{ base: 2 }}
-				px={{ base: 4 }}
+				py={{ base: '1.5rem', md: '2rem' }}
+				px={{ base: '1rem', md: '2.25rem' }}
 				align={'center'}
 				background={bgColor}
 				boxShadow={boxShadow}
@@ -113,6 +112,4 @@ const Navbar = () => {
 			</Collapse>
 		</>
 	);
-};
-
-export default Navbar;
+}

@@ -14,14 +14,14 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react';
 
-const DesktopNav = () => {
+export default function DesktopNav() {
 	const linkColor = useColorModeValue('gray.600', 'gray.200');
 	const linkHoverColor = useColorModeValue('gray.800', 'white');
 	const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
 	return (
 		<HStack spacing={4}>
-			{NAV_ITEMS.map(navItem => (
+			{NAV_ITEMS.map((navItem) => (
 				<Box key={navItem.label}>
 					<Popover trigger={'hover'} placement={'bottom-start'}>
 						<PopoverTrigger>
@@ -50,7 +50,7 @@ const DesktopNav = () => {
 								minW={'sm'}
 							>
 								<Stack>
-									{navItem.children.map(child => (
+									{navItem.children.map((child) => (
 										<DesktopSubNav key={child.label} {...child} />
 									))}
 								</Stack>
@@ -61,9 +61,9 @@ const DesktopNav = () => {
 			))}
 		</HStack>
 	);
-};
+}
 
-export const DesktopSubNav = ({ label, href, subLabel }) => {
+const DesktopSubNav = ({ label, href, subLabel }) => {
 	return (
 		<Link
 			href={href}
@@ -99,5 +99,3 @@ export const DesktopSubNav = ({ label, href, subLabel }) => {
 		</Link>
 	);
 };
-
-export default DesktopNav;
