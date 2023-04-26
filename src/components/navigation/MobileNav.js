@@ -14,12 +14,8 @@ import NAV_ITEMS from '@/data/navItems';
 
 export default function MobileNav() {
 	return (
-		<Stack
-			bg={useColorModeValue('white', 'gray.800')}
-			p={4}
-			display={{ md: 'none' }}
-		>
-			{NAV_ITEMS.map((navItem) => (
+		<Stack bg={useColorModeValue('white', 'gray.800')} p={4}>
+			{NAV_ITEMS.map(navItem => (
 				<MobileNavItem key={navItem.label} {...navItem} />
 			))}
 		</Stack>
@@ -68,7 +64,7 @@ const MobileNavItem = ({ label, children, href }) => {
 					align={'start'}
 				>
 					{children &&
-						children.map((child) => (
+						children.map(child => (
 							<Link key={child.label} py={2} href={child.href}>
 								{child.label}
 							</Link>
