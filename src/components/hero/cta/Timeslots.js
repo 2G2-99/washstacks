@@ -27,7 +27,7 @@ export default function Timeslots() {
 			<SimpleGrid
 				className="slots"
 				w={'100%'}
-				columns={{ base: 1, sm: 2 }}
+				columns={{ base: 1, md: 2 }}
 				spacing={2}
 			>
 				<Slot

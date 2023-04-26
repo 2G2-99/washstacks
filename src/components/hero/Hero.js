@@ -27,7 +27,7 @@ export default function Hero() {
 			>
 				<Flex mx={useBreakpointValue({ md: '1.5em' })} wrap direction={'row'}>
 					<Box
-						mt={useBreakpointValue({ base: '2em', sm: '3em' })}
+						mt={useBreakpointValue({ base: '2em', md: '3em' })}
 						px={useBreakpointValue({ base: '.75em' })}
 						w={useBreakpointValue({ base: 'full', md: '50%' })}
 					>
@@ -36,8 +36,8 @@ export default function Hero() {
 							display={{ base: 'none', md: 'block' }}
 							backgroundColor={'white'}
 							py={'1rem'}
-							borderRadius={useBreakpointValue({ sm: '.25rem' })}
-							mb={useBreakpointValue({ sm: '7em' })}
+							borderRadius={useBreakpointValue({ md: '.25rem' })}
+							mb={useBreakpointValue({ md: '7em' })}
 							maxW={'full'}
 						>
 							<Timeslots />
@@ -48,7 +48,7 @@ export default function Hero() {
 						w={'50%'}
 						px={'.75em'}
 						alignSelf={'flex-start'}
-						mt={useBreakpointValue({ base: '2em', sm: '3em' })}
+						mt={useBreakpointValue({ base: '2em', md: '3em' })}
 						mb={{ lg: '.5em' }}
 					>
 						<Image
