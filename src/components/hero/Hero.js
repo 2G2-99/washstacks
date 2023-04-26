@@ -29,11 +29,11 @@ export default function Hero() {
 					<Box
 						mt={useBreakpointValue({ base: '2em', sm: '3em' })}
 						px={useBreakpointValue({ base: '.75em' })}
-						w={useBreakpointValue({ base: 'full', sm: '50%' })}
+						w={useBreakpointValue({ base: 'full', md: '50%' })}
 					>
 						<HeroHeading />
 						<Container
-							display={{ base: 'none', sm: 'block' }}
+							display={{ base: 'none', md: 'block' }}
 							backgroundColor={'white'}
 							py={'1rem'}
 							borderRadius={useBreakpointValue({ sm: '.25rem' })}
@@ -44,7 +44,7 @@ export default function Hero() {
 						</Container>
 					</Box>
 					<Flex
-						display={useBreakpointValue({ base: 'none', sm: 'block' })}
+						display={useBreakpointValue({ base: 'none', md: 'block' })}
 						w={'50%'}
 						px={'.75em'}
 						alignSelf={'flex-start'}
@@ -59,7 +59,7 @@ export default function Hero() {
 					</Flex>
 				</Flex>
 			</Container>
-			<Container w={'full'} bg={'white'} py={'1.75em'} display={{ sm: 'none' }}>
+			<Container w={'full'} bg={'white'} py={'1.75em'} display={{ md: 'none' }}>
 				<Timeslots />
 			</Container>
 		</Box>
