@@ -1,19 +1,21 @@
 import {
 	Flex,
-	Text,
 	IconButton,
 	Button,
-	Stack,
 	Collapse,
-	Link,
 	useBreakpointValue,
 	useDisclosure,
+	Spacer,
+	HStack,
+	Box,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import Logo from '../../assets/svg/logoipsum-245.svg';
+import Logo from '../../assets/svg/brand/Logo.svg';
+import Logo_v1 from '../../assets/svg/brand/v1.svg';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { useEffect, useState } from 'react';
+import { Link } from '@chakra-ui/next-js';
 
 export default function Navbar() {
 	const { isOpen, onToggle } = useDisclosure();
@@ -33,6 +35,7 @@ export default function Navbar() {
 
 	const bgColor = scrollPosition === 0 ? 'brand.100' : 'transparent';
 	const boxShadow = scrollPosition === 0 ? 'none' : 'xl';
+	const brandLogo = scrollPosition === 0 ? <Logo /> : <Logo_v1 />;
 
 	return (
 		<>
@@ -48,63 +51,75 @@ export default function Navbar() {
 				backdropBlur={'6px'}
 				transition="all 0.2s ease-in-out"
 			>
-				<Flex
-					flex={{ base: 1, md: 'auto' }}
-					ml={{ base: -2 }}
-					display={{ base: 'flex', md: 'none' }}
-				>
-					<IconButton
-						onClick={onToggle}
-						icon={
-							isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-						}
-						variant={'ghost'}
-						aria-label={'Toggle Navigation'}
-					/>
+				<Box mr={{ lg: '10' }}>
+					<Link href={'/'}>{brandLogo}</Link>
+				</Box>
+				<Flex display={{ base: 'none', lg: 'block' }}>
+					<DesktopNav />
 				</Flex>
-				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-					<Text textAlign={useBreakpointValue({ base: 'center', md: 'left' })}>
-						<Link href={'/'}>
-							<Logo />
-							{/* <Text>WashStacks</Text> */}
-						</Link>
-					</Text>
-
-					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-						<DesktopNav />
-					</Flex>
-				</Flex>
-
-				<Stack
-					flex={{ base: 1, md: 0 }}
-					justify={'flex-end'}
-					direction={'row'}
-					spacing={6}
-				>
-					<Button
-						as={'a'}
-						fontSize={'sm'}
-						fontWeight={400}
-						variant={'link'}
+				<Spacer flex={1} />
+				<Flex align={'center'} gap={2}>
+					<Link
+						display={{ base: 'none', md: 'block' }}
+						pr={3}
+						fontWeight={600}
+						color={'white'}
 						href={'/login'}
+						_hover={{
+							textDecoration: 'none',
+							textShadow: '3px 3px #2364aa',
+							transform: 'scale(1.125)',
+						}}
+						transition={'.3s ease-in-out'}
 					>
 						Log in
-					</Button>
+					</Link>
 					<Button
 						as={'a'}
 						display={{ base: 'none', md: 'inline-flex' }}
-						fontSize={'sm'}
+						p={'.7rem 1.55rem'}
+						borderRadius={'4px'}
 						fontWeight={600}
-						color={'white'}
-						bg={'pink.400'}
+						color={'#2364aa'}
+						bg={'white'}
 						href={'#'}
 						_hover={{
-							bg: 'pink.300',
+							bg: 'brand.250',
 						}}
+						transition={'.3s ease-in-out'}
 					>
 						Book now
 					</Button>
-				</Stack>
+					<Button
+						as={'a'}
+						display={{ base: 'inline-flex', md: 'none' }}
+						p={'.7rem'}
+						borderRadius={'4px'}
+						fontWeight={600}
+						color={'#2364aa'}
+						bg={'white'}
+						href={'#'}
+						_hover={{
+							bg: 'brand.250',
+						}}
+						transition={'.3s ease-in-out'}
+					>
+						Book
+					</Button>
+					<IconButton
+						display={{ base: 'block', lg: 'none' }}
+						onClick={onToggle}
+						icon={
+							isOpen ? <CloseIcon boxSize={5} /> : <HamburgerIcon boxSize={8} />
+						}
+						variant={'ghost'}
+						aria-label={'Toggle Navigation'}
+						color={'white'}
+						_hover={{
+							bg: 'none',
+						}}
+					/>
+				</Flex>
 			</Flex>
 
 			<Collapse in={isOpen} animateOpacity>

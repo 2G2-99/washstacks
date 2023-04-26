@@ -15,13 +15,13 @@ import {
 } from '@chakra-ui/react';
 
 export default function DesktopNav() {
-	const linkColor = useColorModeValue('gray.600', 'gray.200');
-	const linkHoverColor = useColorModeValue('gray.800', 'white');
-	const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+	// const linkColor = useColorModeValue('gray.600', 'gray.200');
+	// const linkHoverColor = useColorModeValue('gray.800', 'white');
+	// const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
 	return (
 		<HStack spacing={4}>
-			{NAV_ITEMS.map((navItem) => (
+			{NAV_ITEMS.map(navItem => (
 				<Box key={navItem.label}>
 					<Popover trigger={'hover'} placement={'bottom-start'}>
 						<PopoverTrigger>
@@ -30,10 +30,10 @@ export default function DesktopNav() {
 								href={navItem.href ?? '#'}
 								fontSize={'sm'}
 								fontWeight={500}
-								color={linkColor}
+								color={'white'}
 								_hover={{
 									textDecoration: 'none',
-									color: linkHoverColor,
+									color: 'brand.850',
 								}}
 							>
 								{navItem.label}
@@ -44,13 +44,13 @@ export default function DesktopNav() {
 							<PopoverContent
 								border={0}
 								boxShadow={'lg'}
-								bg={popoverContentBgColor}
+								bg={'white'}
 								p={4}
 								rounded={'md'}
 								minW={'sm'}
 							>
 								<Stack>
-									{navItem.children.map((child) => (
+									{navItem.children.map(child => (
 										<DesktopSubNav key={child.label} {...child} />
 									))}
 								</Stack>
