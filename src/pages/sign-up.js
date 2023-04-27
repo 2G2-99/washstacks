@@ -13,7 +13,6 @@ import {
 	VStack,
 	HStack,
 } from '@chakra-ui/react';
-import { useState } from 'react';
 import Layout from '@/components/Layout';
 import { GiEnvelope } from 'react-icons/gi';
 import { FcGoogle } from 'react-icons/fc';

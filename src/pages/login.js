@@ -10,7 +10,6 @@ import {
 	VStack,
 	Icon,
 } from '@chakra-ui/react';
-import { useState } from 'react';
 import { GiEnvelope } from 'react-icons/gi';
 import { FcGoogle } from 'react-icons/fc';
 import { BsApple, BsFacebook } from 'react-icons/bs';

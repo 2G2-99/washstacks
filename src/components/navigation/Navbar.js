@@ -33,7 +33,7 @@ export default function Navbar() {
 		};
 	}, [scrollPosition]);
 
-	const bgColor = scrollPosition === 0 ? 'brand.100' : 'transparent';
+	const bgColor = scrollPosition === 0 ? 'brand.150' : 'transparent';
 	const boxShadow = scrollPosition === 0 ? 'none' : 'xl';
 	const brandLogo = scrollPosition === 0 ? <Logo /> : <Logo_v1 />;
 

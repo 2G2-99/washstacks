@@ -23,11 +23,11 @@ export default function Layout({ children, home }) {
 				w="100%"
 				zIndex={10}
 			>
-				{home || !home ? <Navbar /> : null}
+				{home ? <Navbar /> : null}
 			</Box>
 			<main>
 				{children}
-				{!home && <Link href="/">← Back to home</Link>}
+				{home ? null : <Link href="/">← Back to home</Link>}
 			</main>
 			<Footer />
 		</Box>

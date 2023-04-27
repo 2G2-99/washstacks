@@ -14,7 +14,7 @@ export default function Hero() {
 		<Box
 			id="hero"
 			w={'full'}
-			backgroundColor={'brand.100'}
+			backgroundColor={'brand.150'}
 			pt={useBreakpointValue({ base: '5.5em' })}
 		>
 			<Container
