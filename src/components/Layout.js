@@ -1,11 +1,27 @@
-import { Box } from '@chakra-ui/react';
+import { Box, SlideFade } from '@chakra-ui/react';
 import Head from 'next/head';
 
 import Navbar from './navigation/Navbar';
 import { Link } from '@chakra-ui/next-js';
 import Footer from './Footer';
+import { useEffect, useState } from 'react';
+import ScrolledNavbar from './navigation/ScrolledNavbar';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home = false }) {
+	const [scrollPosition, setScrollPosition] = useState(0);
+
+	const handleScroll = () => {
+		setScrollPosition(window.scrollY);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [scrollPosition]);
+
 	return (
 		<Box>
 			<Head>
@@ -23,7 +39,7 @@ export default function Layout({ children, home }) {
 				w="100%"
 				zIndex={10}
 			>
-				{home ? <Navbar /> : null}
+				{home && scrollPosition === 0 ? <Navbar /> : <ScrolledNavbar />}
 			</Box>
 			<main>
 				{children}

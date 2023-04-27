@@ -3,37 +3,34 @@ import {
 	IconButton,
 	Button,
 	Collapse,
-	useBreakpointValue,
 	useDisclosure,
 	Spacer,
 	Box,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import Logo from '../../assets/svg/brand/logo.svg';
+import Logo_v1 from '../../assets/svg/brand/v1.svg';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { Link } from '@chakra-ui/next-js';
 
-export default function Navbar() {
+export default function ScrolledNavbar() {
 	const { isOpen, onToggle } = useDisclosure();
 
 	return (
 		<>
 			<Flex
-				className={'navbar'}
+				className="scrolled--navbar"
 				as={'nav'}
 				minH={'60px'}
 				py={{ base: '1.5rem', md: '2rem' }}
 				px={{ base: '1rem', md: '2.25rem' }}
 				align={'center'}
-				background={'brand.150'}
-				backdropFilter="auto"
-				backdropBlur={'6px'}
-				transition="all 0.2s ease-in-out"
+				background={'brand.900'}
+				boxShadow={'xl'}
 			>
 				<Box mr={{ lg: '10' }}>
 					<Link href={'/'}>
-						<Logo />
+						<Logo_v1 />
 					</Link>
 				</Box>
 				<Flex display={{ base: 'none', lg: 'block' }}>
