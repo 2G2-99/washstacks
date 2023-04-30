@@ -14,7 +14,7 @@ export default function Hero() {
 		<Box
 			id="hero"
 			w={'full'}
-			backgroundColor={'brand.100'}
+			backgroundColor={'brand.150'}
 			pt={useBreakpointValue({ base: '5.5em' })}
 		>
 			<Container
@@ -34,7 +34,7 @@ export default function Hero() {
 						<HeroHeading />
 						<Container
 							display={{ base: 'none', md: 'block' }}
-							backgroundColor={'white'}
+							backgroundColor={'brand.900'}
 							py={'1rem'}
 							borderRadius={useBreakpointValue({ md: '.25rem' })}
 							mb={useBreakpointValue({ md: '7em' })}
@@ -52,14 +52,19 @@ export default function Hero() {
 						mb={{ lg: '.5em' }}
 					>
 						<Image
-							src="https://prod-cdn.laundryheap.com/assets/landing/hero/europe_2x-45f94d1b0282fe5831ca474014e73457fdc71072ae5025cb6cc2ba48d283f5a8.jpg"
-							fallbackSrc="../../assets/img/laundryheap-europe_2x.jpg"
+							src="/img/laundryheap-europe_2x.jpg"
+							fallbackSrc="https://prod-cdn.laundryheap.com/assets/landing/hero/europe_2x-45f94d1b0282fe5831ca474014e73457fdc71072ae5025cb6cc2ba48d283f5a8.jpg"
 							alt="A european, blonde girl holding a stack of blue jeans"
 						/>
 					</Flex>
 				</Flex>
 			</Container>
-			<Container w={'full'} bg={'white'} py={'1.75em'} display={{ md: 'none' }}>
+			<Container
+				w={'full'}
+				bg={'brand.900'}
+				py={'1.75em'}
+				display={{ md: 'none' }}
+			>
 				<Timeslots />
 			</Container>
 		</Box>

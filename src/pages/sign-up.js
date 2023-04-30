@@ -13,7 +13,6 @@ import {
 	VStack,
 	HStack,
 } from '@chakra-ui/react';
-import { useState } from 'react';
 import Layout from '@/components/Layout';
 import { GiEnvelope } from 'react-icons/gi';
 import { FcGoogle } from 'react-icons/fc';
@@ -49,7 +48,7 @@ export default function SignupCard() {
 								<Icon
 									as={BsApple}
 									display={'block'}
-									fill={'white'}
+									fill={'brand.900'}
 									fontSize={'2xl'}
 								/>
 							</Button>
@@ -57,7 +56,7 @@ export default function SignupCard() {
 								<Icon
 									as={BsFacebook}
 									display={'block'}
-									fill={'white'}
+									fill={'brand.900'}
 									fontSize={'2xl'}
 								/>
 							</Button>
@@ -92,7 +91,7 @@ export default function SignupCard() {
 									loadingText="Submitting"
 									size="lg"
 									bg={'blue.400'}
-									color={'white'}
+									color={'brand.900'}
 									_hover={{
 										bg: 'blue.500',
 									}}

@@ -3,38 +3,38 @@ import {
 	IconButton,
 	Button,
 	Collapse,
-	useBreakpointValue,
 	useDisclosure,
 	Spacer,
 	Box,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import Logo from '../../assets/svg/brand/logo.svg';
+import Logo_v1 from '../../assets/svg/brand/v1.svg';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { Link } from '@chakra-ui/next-js';
 
-export default function Navbar() {
+export default function ScrolledNavbar() {
 	const { isOpen, onToggle } = useDisclosure();
 
 	return (
 		<>
 			<Flex
-				className={'navbar'}
+				className="scrolled--navbar"
 				as={'nav'}
 				minH={'60px'}
 				py={{ base: '1.5rem', md: '2rem' }}
 				px={{ base: '1rem', md: '2.25rem' }}
 				align={'center'}
-				background={'brand.150'}
+				background={'brand.900'}
+				boxShadow={'xl'}
 			>
 				<Box mr={{ lg: '10' }}>
 					<Link href={'/'}>
-						<Logo />
+						<Logo_v1 />
 					</Link>
 				</Box>
 				<Flex display={{ base: 'none', lg: 'block' }}>
-					<DesktopNav color={'brand.900'} />
+					<DesktopNav color={'brand.800'} />
 				</Flex>
 				<Spacer flex={1} />
 				<Flex align={'center'} gap={2}>
@@ -42,11 +42,11 @@ export default function Navbar() {
 						display={{ base: 'none', md: 'block' }}
 						pr={3}
 						fontWeight={600}
-						color={'brand.900'}
+						color={'brand.800'}
 						href={'/login'}
 						_hover={{
 							textDecoration: 'none',
-							textShadow: '2.5px 2.5px #2364aa',
+							textShadow: '2.5px 2.5px #d5d5d5',
 							transform: 'scale(1.125)',
 						}}
 						transition={'.3s ease-in-out'}
@@ -59,8 +59,8 @@ export default function Navbar() {
 						p={'.7rem 1.55rem'}
 						borderRadius={'4px'}
 						fontWeight={600}
-						color={'#2364aa'}
-						bg={'brand.900'}
+						color={'brand.900'}
+						bg={'brand.150'}
 						href={'#'}
 						_hover={{
 							bg: 'brand.250',
@@ -75,8 +75,8 @@ export default function Navbar() {
 						p={'.7rem'}
 						borderRadius={'4px'}
 						fontWeight={600}
-						color={'#2364aa'}
-						bg={'brand.900'}
+						color={'brand.900'}
+						bg={'brand.150'}
 						href={'#'}
 						_hover={{
 							bg: 'brand.250',

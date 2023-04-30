@@ -5,7 +5,7 @@ import ScheduleAndFeatures from '@/components/sections/features';
 
 export default function Home() {
 	return (
-		<Layout>
+		<Layout home>
 			<Head>
 				<title>WashStacks</title>
 			</Head>
