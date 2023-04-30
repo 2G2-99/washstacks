@@ -27,9 +27,6 @@ export default function Navbar() {
 				px={{ base: '1rem', md: '2.25rem' }}
 				align={'center'}
 				background={'brand.150'}
-				backdropFilter="auto"
-				backdropBlur={'6px'}
-				transition="all 0.2s ease-in-out"
 			>
 				<Box mr={{ lg: '10' }}>
 					<Link href={'/'}>
@@ -37,7 +34,7 @@ export default function Navbar() {
 					</Link>
 				</Box>
 				<Flex display={{ base: 'none', lg: 'block' }}>
-					<DesktopNav />
+					<DesktopNav color={'brand.900'} />
 				</Flex>
 				<Spacer flex={1} />
 				<Flex align={'center'} gap={2}>
@@ -45,11 +42,11 @@ export default function Navbar() {
 						display={{ base: 'none', md: 'block' }}
 						pr={3}
 						fontWeight={600}
-						color={'white'}
+						color={'brand.900'}
 						href={'/login'}
 						_hover={{
 							textDecoration: 'none',
-							textShadow: '3px 3px #2364aa',
+							textShadow: '2.5px 2.5px #2364aa',
 							transform: 'scale(1.125)',
 						}}
 						transition={'.3s ease-in-out'}
@@ -63,7 +60,7 @@ export default function Navbar() {
 						borderRadius={'4px'}
 						fontWeight={600}
 						color={'#2364aa'}
-						bg={'white'}
+						bg={'brand.900'}
 						href={'#'}
 						_hover={{
 							bg: 'brand.250',
@@ -79,7 +76,7 @@ export default function Navbar() {
 						borderRadius={'4px'}
 						fontWeight={600}
 						color={'#2364aa'}
-						bg={'white'}
+						bg={'brand.900'}
 						href={'#'}
 						_hover={{
 							bg: 'brand.250',
@@ -96,7 +93,7 @@ export default function Navbar() {
 						}
 						variant={'ghost'}
 						aria-label={'Toggle Navigation'}
-						color={'white'}
+						color={'brand.900'}
 						_hover={{
 							bg: 'none',
 						}}

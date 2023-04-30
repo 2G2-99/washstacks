@@ -14,11 +14,7 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react';
 
-export default function DesktopNav() {
-	// const linkColor = useColorModeValue('gray.600', 'gray.200');
-	// const linkHoverColor = useColorModeValue('gray.800', 'white');
-	// const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-
+export default function DesktopNav({ color, hoverColor }) {
 	return (
 		<HStack spacing={4}>
 			{NAV_ITEMS.map(navItem => (
@@ -30,10 +26,9 @@ export default function DesktopNav() {
 								href={navItem.href ?? '#'}
 								fontSize={'sm'}
 								fontWeight={500}
-								color={'white'}
+								color={color}
 								_hover={{
 									textDecoration: 'none',
-									color: 'brand.850',
 								}}
 							>
 								{navItem.label}
@@ -44,7 +39,7 @@ export default function DesktopNav() {
 							<PopoverContent
 								border={0}
 								boxShadow={'lg'}
-								bg={'white'}
+								bg={'brand.900'}
 								p={4}
 								rounded={'md'}
 								minW={'sm'}
@@ -71,13 +66,13 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 			display={'block'}
 			p={2}
 			rounded={'md'}
-			_hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+			_hover={{ bg: useColorModeValue('brand.150_shade', 'gray.900') }}
 		>
 			<HStack align={'center'}>
 				<Box>
 					<Text
 						transition={'all .3s ease'}
-						_groupHover={{ color: 'pink.400' }}
+						_groupHover={{ color: 'brand.150' }}
 						fontWeight={500}
 					>
 						{label}
@@ -93,7 +88,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 					align={'center'}
 					flex={1}
 				>
-					<Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+					<Icon color={'brand.150'} w={5} h={5} as={ChevronRightIcon} />
 				</Flex>
 			</HStack>
 		</Link>
