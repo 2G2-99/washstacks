@@ -52,8 +52,8 @@ export default function Hero() {
 						mb={{ lg: '.5em' }}
 					>
 						<Image
-							src="/img/laundryheap-europe_2x.jpg"
-							fallbackSrc="https://prod-cdn.laundryheap.com/assets/landing/hero/europe_2x-45f94d1b0282fe5831ca474014e73457fdc71072ae5025cb6cc2ba48d283f5a8.jpg"
+							fallbackSrc="/img/laundryheap-europe_2x.jpg"
+							src="https://prod-cdn.laundryheap.com/assets/landing/hero/europe_2x-45f94d1b0282fe5831ca474014e73457fdc71072ae5025cb6cc2ba48d283f5a8.jpg"
 							alt="A european, blonde girl holding a stack of blue jeans"
 						/>
 					</Flex>

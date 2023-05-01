@@ -63,7 +63,7 @@ export default function ScrolledNavbar() {
 						bg={'brand.150'}
 						href={'#'}
 						_hover={{
-							bg: 'brand.250',
+							bg: 'brand.100',
 						}}
 						transition={'.3s ease-in-out'}
 					>
@@ -79,7 +79,7 @@ export default function ScrolledNavbar() {
 						bg={'brand.150'}
 						href={'#'}
 						_hover={{
-							bg: 'brand.250',
+							bg: 'brand.100',
 						}}
 						transition={'.3s ease-in-out'}
 					>
