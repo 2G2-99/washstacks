@@ -72,7 +72,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 			display={'block'}
 			p={2}
 			rounded={'md'}
-			_hover={{ bg: useColorModeValue('brand.150_shade', 'gray.900') }}
+			_hover={{ bg: useColorModeValue('brand.shade', 'gray.900') }}
 		>
 			<HStack align={'center'}>
 				<Box>

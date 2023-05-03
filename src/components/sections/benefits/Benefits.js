@@ -161,8 +161,7 @@ export default function Benefits({}) {
 				<Link
 					display={'inline-block'}
 					href={'#'}
-					borderWidth={'1.25px'}
-					borderColor={'#D8DCDF'}
+					bg={'brand.250'}
 					borderRadius={'full'}
 					p={'.5rem'}
 					_hover={{ textDecor: 'none' }}
@@ -171,9 +170,9 @@ export default function Benefits({}) {
 						<Icon
 							as={IoChatbubbleEllipsesOutline}
 							boxSize={7}
-							color={'#202B93'}
+							color={'brand.100'}
 						/>
-						<Text color={'#202B93'}>Chat with us</Text>
+						<Text color={'brand.100'}>Chat with us</Text>
 					</HStack>
 				</Link>
 			</Content>
