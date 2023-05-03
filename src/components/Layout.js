@@ -42,7 +42,10 @@ export default function Layout({ children, home = false }) {
 				{home && isScrolled === 0 ? (
 					<Navbar />
 				) : (
-					<Slide in={isScrolled} direction="top">
+					<Slide
+						in={isScrolled}
+						direction="top"
+					>
 						<ScrolledNavbar />
 					</Slide>
 				)}

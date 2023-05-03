@@ -16,7 +16,10 @@ export default function HeroHeading() {
 			})}
 		>
 			Laundry & dry cleaning with 24h delivery in
-			<Text h={'2em'} color={'brand.400'}>
+			<Text
+				h={'2em'}
+				color={'brand.400'}
+			>
 				London
 			</Text>
 		</Heading>

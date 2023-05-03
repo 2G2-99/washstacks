@@ -18,7 +18,11 @@ import Logo from '../assets/svg/brand/v1.svg';
 
 const ListHeader = ({ children }) => {
 	return (
-		<Text fontWeight={'500'} fontSize={'lg'} mb={2}>
+		<Text
+			fontWeight={'500'}
+			fontSize={'lg'}
+			mb={2}
+		>
 			{children}
 		</Text>
 	);
@@ -54,8 +58,15 @@ export default function Footer() {
 			bg={useColorModeValue('gray.50', 'gray.900')}
 			color={useColorModeValue('gray.700', 'gray.200')}
 		>
-			<Container as={Stack} maxW={'6xl'} py={10}>
-				<SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
+			<Container
+				as={Stack}
+				maxW={'6xl'}
+				py={10}
+			>
+				<SimpleGrid
+					columns={{ base: 1, sm: 2, md: 4 }}
+					spacing={8}
+				>
 					<Stack align={'flex-start'}>
 						<ListHeader>Company</ListHeader>
 						<Link href={'#'}>About Us</Link>
@@ -120,14 +131,26 @@ export default function Footer() {
 						align={{ base: 'center', md: 'center' }}
 					>
 						<Text>© 2022 Chakra Templates. All rights reserved</Text>
-						<Stack direction={'row'} spacing={6}>
-							<SocialButton label={'Twitter'} href={'#'}>
+						<Stack
+							direction={'row'}
+							spacing={6}
+						>
+							<SocialButton
+								label={'Twitter'}
+								href={'#'}
+							>
 								<FaTwitter />
 							</SocialButton>
-							<SocialButton label={'YouTube'} href={'#'}>
+							<SocialButton
+								label={'YouTube'}
+								href={'#'}
+							>
 								<FaYoutube />
 							</SocialButton>
-							<SocialButton label={'Instagram'} href={'#'}>
+							<SocialButton
+								label={'Instagram'}
+								href={'#'}
+							>
 								<FaInstagram />
 							</SocialButton>
 						</Stack>

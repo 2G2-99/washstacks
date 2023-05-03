@@ -37,7 +37,10 @@ export default function ScrolledNavbar() {
 					<DesktopNav color={'brand.800'} />
 				</Flex>
 				<Spacer flex={1} />
-				<Flex align={'center'} gap={2}>
+				<Flex
+					align={'center'}
+					gap={2}
+				>
 					<Link
 						display={{ base: 'none', md: 'block' }}
 						pr={3}
@@ -63,7 +66,7 @@ export default function ScrolledNavbar() {
 						bg={'brand.150'}
 						href={'#'}
 						_hover={{
-							bg: 'brand.250',
+							bg: 'brand.100',
 						}}
 						transition={'.3s ease-in-out'}
 					>
@@ -79,7 +82,7 @@ export default function ScrolledNavbar() {
 						bg={'brand.150'}
 						href={'#'}
 						_hover={{
-							bg: 'brand.250',
+							bg: 'brand.100',
 						}}
 						transition={'.3s ease-in-out'}
 					>
@@ -101,7 +104,10 @@ export default function ScrolledNavbar() {
 				</Flex>
 			</Flex>
 
-			<Collapse in={isOpen} animateOpacity>
+			<Collapse
+				in={isOpen}
+				animateOpacity
+			>
 				<MobileNav />
 			</Collapse>
 		</>

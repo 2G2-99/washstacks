@@ -14,9 +14,15 @@ import NAV_ITEMS from '@/data/navItems';
 
 export default function MobileNav() {
 	return (
-		<Stack bg={useColorModeValue('brand.900', 'gray.800')} p={4}>
+		<Stack
+			bg={useColorModeValue('brand.900', 'gray.800')}
+			p={4}
+		>
 			{NAV_ITEMS.map(navItem => (
-				<MobileNavItem key={navItem.label} {...navItem} />
+				<MobileNavItem
+					key={navItem.label}
+					{...navItem}
+				/>
 			))}
 		</Stack>
 	);
@@ -26,7 +32,10 @@ const MobileNavItem = ({ label, children, href }) => {
 	const { isOpen, onToggle } = useDisclosure();
 
 	return (
-		<Stack spacing={4} onClick={children && onToggle}>
+		<Stack
+			spacing={4}
+			onClick={children && onToggle}
+		>
 			<Flex
 				py={2}
 				as={Link}
@@ -54,7 +63,11 @@ const MobileNavItem = ({ label, children, href }) => {
 				)}
 			</Flex>
 
-			<Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+			<Collapse
+				in={isOpen}
+				animateOpacity
+				style={{ marginTop: '0!important' }}
+			>
 				<Stack
 					mt={2}
 					pl={4}
@@ -65,7 +78,11 @@ const MobileNavItem = ({ label, children, href }) => {
 				>
 					{children &&
 						children.map(child => (
-							<Link key={child.label} py={2} href={child.href}>
+							<Link
+								key={child.label}
+								py={2}
+								href={child.href}
+							>
 								{child.label}
 							</Link>
 						))}

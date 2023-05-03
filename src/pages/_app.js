@@ -10,7 +10,10 @@ import '@fontsource/roboto-flex';
 
 export default function App({ Component, pageProps }) {
 	return (
-		<ChakraProvider resetCSS theme={customTheme}>
+		<ChakraProvider
+			resetCSS
+			theme={customTheme}
+		>
 			<Component {...pageProps} />
 		</ChakraProvider>
 	);

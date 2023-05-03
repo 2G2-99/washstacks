@@ -27,9 +27,18 @@ export default function SignupCard() {
 				justify={'center'}
 				bg={useColorModeValue('gray.50', 'gray.800')}
 			>
-				<Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
+				<Stack
+					spacing={8}
+					mx={'auto'}
+					maxW={'lg'}
+					py={12}
+					px={6}
+				>
 					<Stack align={'center'}>
-						<Heading fontSize={'4xl'} textAlign={'center'}>
+						<Heading
+							fontSize={'4xl'}
+							textAlign={'center'}
+						>
 							Sign up
 						</Heading>
 					</Stack>
@@ -42,9 +51,17 @@ export default function SignupCard() {
 								rounded={'full'}
 								p={1}
 							>
-								<Icon as={FcGoogle} display={'block'} fontSize={'3xl'} />
+								<Icon
+									as={FcGoogle}
+									display={'block'}
+									fontSize={'3xl'}
+								/>
 							</Button>
-							<Button background={'black'} rounded={'full'} p={2}>
+							<Button
+								background={'black'}
+								rounded={'full'}
+								p={2}
+							>
 								<Icon
 									as={BsApple}
 									display={'block'}
@@ -52,7 +69,11 @@ export default function SignupCard() {
 									fontSize={'2xl'}
 								/>
 							</Button>
-							<Button background={'#4267b2'} rounded={'full'} p={2}>
+							<Button
+								background={'#4267b2'}
+								rounded={'full'}
+								p={2}
+							>
 								<Icon
 									as={BsFacebook}
 									display={'block'}
@@ -82,7 +103,10 @@ export default function SignupCard() {
 							<Text>or</Text>
 						</Flex>
 						<VStack as={'form'}>
-							<FormControl id="email" isRequired>
+							<FormControl
+								id="email"
+								isRequired
+							>
 								<FormLabel>Email address</FormLabel>
 								<Input type="email" />
 							</FormControl>
@@ -96,14 +120,23 @@ export default function SignupCard() {
 										bg: 'blue.500',
 									}}
 								>
-									<Icon as={GiEnvelope} mr={'.5em'} />
+									<Icon
+										as={GiEnvelope}
+										mr={'.5em'}
+									/>
 									Continue with Email
 								</Button>
 							</Stack>
-							<VStack pt={6} spacing={'.05rem'}>
+							<VStack
+								pt={6}
+								spacing={'.05rem'}
+							>
 								<Text align={'center'}>
 									Already a user?{' '}
-									<Link color={'blue.400'} href="./login">
+									<Link
+										color={'blue.400'}
+										href="./login"
+									>
 										Login
 									</Link>
 								</Text>

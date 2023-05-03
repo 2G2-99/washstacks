@@ -37,7 +37,10 @@ export default function Navbar() {
 					<DesktopNav color={'brand.900'} />
 				</Flex>
 				<Spacer flex={1} />
-				<Flex align={'center'} gap={2}>
+				<Flex
+					align={'center'}
+					gap={2}
+				>
 					<Link
 						display={{ base: 'none', md: 'block' }}
 						pr={3}
@@ -101,7 +104,10 @@ export default function Navbar() {
 				</Flex>
 			</Flex>
 
-			<Collapse in={isOpen} animateOpacity>
+			<Collapse
+				in={isOpen}
+				animateOpacity
+			>
 				<MobileNav />
 			</Collapse>
 		</>

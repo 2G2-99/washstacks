@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Hero from '@/components/hero/Hero';
-import ScheduleAndFeatures from '@/components/sections/features';
+import Benefits from '@/components/sections/benefits/Benefits';
 
 export default function Home() {
 	return (
@@ -10,7 +10,7 @@ export default function Home() {
 				<title>WashStacks</title>
 			</Head>
 			<Hero />
-			<ScheduleAndFeatures />
+			<Benefits />
 		</Layout>
 	);
 }

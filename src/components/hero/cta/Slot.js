@@ -1,5 +1,12 @@
 import { Link } from '@chakra-ui/next-js';
-import { Box, Flex, Icon, Text, useBreakpointValue } from '@chakra-ui/react';
+import {
+	Box,
+	Center,
+	Flex,
+	Icon,
+	Text,
+	useBreakpointValue,
+} from '@chakra-ui/react';
 import { HiChevronRight } from 'react-icons/hi';
 
 export default function Slot({ url, id, icon, header, timeslot }) {
@@ -38,7 +45,9 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 						color={'brand.850'}
 						_groupHover={{ color: 'brand.100' }}
 					>
-						<Icon as={icon} mr={'.5rem'} />
+						<Center mr={'.25rem'}>
+							<Icon as={icon} />
+						</Center>
 						<Text as={'span'}>{header}</Text>
 					</Flex>
 					<Flex
@@ -51,7 +60,10 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 						<Text>{timeslot}</Text>
 					</Flex>
 				</Box>
-				<Icon as={HiChevronRight} color={'brand.100'} />
+				<Icon
+					as={HiChevronRight}
+					color={'brand.100'}
+				/>
 			</Flex>
 		</Link>
 	);
