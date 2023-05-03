@@ -14,14 +14,38 @@ export default function Content({
 	return (
 		<Flex direction={direction}>
 			<Box w={{ md: '50%' }}>
-				<Image src={image} fallbackSrc={fallbackImage} />
+				<Image
+					src={image}
+					fallbackSrc={fallbackImage}
+				/>
 			</Box>
-			<Box w={{ md: '50%' }} ml={marginOnLeft} mr={marginOnRight} px={'10px'}>
-				<Text textTransform={'uppercase'}>{catchphrase}</Text>
-				<Heading as={'h3'} mb={'1rem'}>
+			<Box
+				w={{ md: '50%' }}
+				px={'10px'}
+				ml={marginOnLeft}
+				mr={marginOnRight}
+				mb={'3rem'}
+			>
+				<Text
+					mb={'1rem'}
+					textTransform={'uppercase'}
+					fontWeight={'bold'}
+					color={'brand.850'}
+				>
+					{catchphrase}
+				</Text>
+				<Heading
+					as={'h3'}
+					mb={'1rem'}
+				>
 					{benefitTitle}
 				</Heading>
-				<Text>{benefitText}</Text>
+				<Text
+					color={'brand.850'}
+					mb={'1rem'}
+				>
+					{benefitText}
+				</Text>
 				{children}
 			</Box>
 		</Flex>

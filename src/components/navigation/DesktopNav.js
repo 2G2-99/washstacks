@@ -19,7 +19,10 @@ export default function DesktopNav({ color, hoverColor }) {
 		<HStack spacing={4}>
 			{NAV_ITEMS.map(navItem => (
 				<Box key={navItem.label}>
-					<Popover trigger={'hover'} placement={'bottom-start'}>
+					<Popover
+						trigger={'hover'}
+						placement={'bottom-start'}
+					>
 						<PopoverTrigger>
 							<Link
 								p={2}
@@ -46,7 +49,10 @@ export default function DesktopNav({ color, hoverColor }) {
 							>
 								<Stack>
 									{navItem.children.map(child => (
-										<DesktopSubNav key={child.label} {...child} />
+										<DesktopSubNav
+											key={child.label}
+											{...child}
+										/>
 									))}
 								</Stack>
 							</PopoverContent>
@@ -88,7 +94,12 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 					align={'center'}
 					flex={1}
 				>
-					<Icon color={'brand.150'} w={5} h={5} as={ChevronRightIcon} />
+					<Icon
+						color={'brand.150'}
+						w={5}
+						h={5}
+						as={ChevronRightIcon}
+					/>
 				</Flex>
 			</HStack>
 		</Link>

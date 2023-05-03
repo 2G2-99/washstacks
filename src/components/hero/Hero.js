@@ -25,7 +25,11 @@ export default function Hero() {
 					lg: 'container.xl',
 				})}
 			>
-				<Flex mx={useBreakpointValue({ md: '1.5em' })} wrap direction={'row'}>
+				<Flex
+					mx={useBreakpointValue({ md: '1.5em' })}
+					wrap
+					direction={'row'}
+				>
 					<Box
 						mt={useBreakpointValue({ base: '2em', md: '3em' })}
 						px={useBreakpointValue({ base: '.75em' })}

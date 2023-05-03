@@ -12,8 +12,11 @@ import {
 	Image,
 	Circle,
 	Box,
+	Center,
+	HStack,
 } from '@chakra-ui/react';
 import Content from './Content';
+import { Fact } from './Fact';
 
 export default function Benefits({}) {
 	return (
@@ -21,31 +24,47 @@ export default function Benefits({}) {
 			id="benefits"
 			maxW={{ base: 'container.sm', lg: 'container.md', xl: 'container.lg' }}
 			px={{ lg: '1rem' }}
+			py={'5rem'}
 		>
 			<Container id="benefits-header">
-				<Heading id="benefits-statement" as={'h2'}>
-					We collect, clean, and deliver your laundry and dry cleaning.
-				</Heading>
-				<Flex id="benefits-facts">
-					<Flex>
-						<Circle w={'40px'} h={'40px'} bg={'brand.400'}>
-							<Circle w={'22.5px'} h={'22.5px'} bg={'brand.800'}>
-								<Text color={'brand.900'}>24</Text>
-							</Circle>
+				<Center mb={'2.5rem'}>
+					<Heading
+						id="benefits-statement"
+						as={'h2'}
+						px={'.75rem'}
+						textAlign={'center'}
+					>
+						We collect, clean, and deliver your laundry and dry cleaning.
+					</Heading>
+				</Center>
+				<Flex
+					id="benefits-facts"
+					gap={'1rem'}
+					mb={'5rem'}
+				>
+					<Fact text={'24h turnaround time'}>
+						<Circle
+							w={'22.5px'}
+							h={'22.5px'}
+							bg={'brand.800'}
+						>
+							<Text
+								color={'brand.900'}
+								fontSize={'.9rem'}
+								fontWeight={'bold'}
+							>
+								24
+							</Text>
 						</Circle>
-						<Text>24h turnaround time</Text>
-					</Flex>
-					<Flex>
-						<Circle w={'40px'} h={'40px'} bg={'brand.400'}>
-							<Icon as={FaTruck} display={'block'} />
-						</Circle>
-						<Text>Free collection and delivery</Text>
-					</Flex>
-					<Flex>
-						<Circle w={'40px'} h={'40px'} bg={'brand.400'}>
-							<Icon as={IoChatbubbleEllipsesOutline} display={'block'} />
-						</Circle>
-					</Flex>
+					</Fact>
+					<Fact
+						icon={FaTruck}
+						text={'Free collection and delivery'}
+					/>
+					<Fact
+						icon={IoChatbubbleEllipsesOutline}
+						text={'Dedicated 24/7 support'}
+					/>
 				</Flex>
 			</Container>
 
@@ -62,7 +81,11 @@ export default function Benefits({}) {
 			>
 				<Link href={'#'}>See how it works</Link>
 			</Content>
-			<Divider orientation="horizontal" my={'5rem'} borderColor={'brand.850'} />
+			<Divider
+				orientation="horizontal"
+				my={'5rem'}
+				borderColor={'brand.850'}
+			/>
 			<Content
 				direction={{ base: 'column-reverse', md: 'row-reverse' }}
 				image={
@@ -73,22 +96,55 @@ export default function Benefits({}) {
 				catchphrase={'24h turnaround time'}
 				benefitTitle={'No need to plan in advance'}
 			>
-				<Flex mb={'.5rem'} align={'center'}>
-					<Circle w={'40px'} h={'40px'} bg={'brand.400'} mr={'.5rem'}>
-						<Icon as={FaCalendarCheck} display={'block'} />
+				<Flex
+					mb={'.5rem'}
+					align={'center'}
+				>
+					<Circle
+						w={'40px'}
+						h={'40px'}
+						bg={'brand.400'}
+						mr={'.5rem'}
+					>
+						<Icon
+							as={FaCalendarCheck}
+							display={'block'}
+						/>
 					</Circle>
-					<Text>Schedule a collection today</Text>
+					<Text fontWeight={'bold'}>Schedule a collection today</Text>
 				</Flex>
-				<Flex mb={'.5rem'} align={'center'}>
-					<Circle w={'40px'} h={'40px'} bg={'brand.400'} mr={'.5rem'}>
-						<Circle w={'22.5px'} h={'22.5px'} bg={'brand.800'}>
-							<Text color={'brand.900'}>24</Text>
+				<Flex
+					mb={'.5rem'}
+					align={'center'}
+				>
+					<Circle
+						w={'40px'}
+						h={'40px'}
+						bg={'brand.400'}
+						mr={'.5rem'}
+					>
+						<Circle
+							w={'22.5px'}
+							h={'22.5px'}
+							bg={'brand.800'}
+						>
+							<Text
+								color={'brand.900'}
+								fontSize={'.9rem'}
+								fontWeight={'bold'}
+							>
+								24
+							</Text>
 						</Circle>
 					</Circle>
-					<Text>Get your laundry back in 24h</Text>
+					<Text fontWeight={'bold'}>Get your laundry back in 24h</Text>
 				</Flex>
 			</Content>
-			<Divider orientation="horizontal" my={'5rem'} borderColor={'brand.850'} />
+			<Divider
+				orientation="horizontal"
+				my={'5rem'}
+				borderColor={'brand.850'}
+			/>
 			<Content
 				direction={{ base: 'column-reverse', md: 'row' }}
 				image={
@@ -102,9 +158,23 @@ export default function Benefits({}) {
 					'Any change in delivery times or date, or if something goes wrong, we are here. Our online customer support team will assist you day and night.'
 				}
 			>
-				<Link href={'#'}>
-					<Icon as={IoChatbubbleEllipsesOutline} />
-					Chat with us
+				<Link
+					display={'inline-block'}
+					href={'#'}
+					borderWidth={'1.25px'}
+					borderColor={'#D8DCDF'}
+					borderRadius={'full'}
+					p={'.5rem'}
+					_hover={{ textDecor: 'none' }}
+				>
+					<HStack spacing={1}>
+						<Icon
+							as={IoChatbubbleEllipsesOutline}
+							boxSize={7}
+							color={'#202B93'}
+						/>
+						<Text color={'#202B93'}>Chat with us</Text>
+					</HStack>
 				</Link>
 			</Content>
 		</Container>

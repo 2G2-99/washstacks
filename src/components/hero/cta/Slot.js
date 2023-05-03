@@ -60,7 +60,10 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 						<Text>{timeslot}</Text>
 					</Flex>
 				</Box>
-				<Icon as={HiChevronRight} color={'brand.100'} />
+				<Icon
+					as={HiChevronRight}
+					color={'brand.100'}
+				/>
 			</Flex>
 		</Link>
 	);
