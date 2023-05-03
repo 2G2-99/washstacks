@@ -5,17 +5,18 @@ const customTheme = extendTheme({
 		brand: {
 			100: '#2364aa',
 			150: '#0890f1',
-			'150_shade': '#e6f4fe',
 			200: '#32a3f3',
 			250: '#bbebff',
 			300: '#2fccc0',
 			400: '#ffd06d',
-			500: '#ea7317ff',
+			500: '#ea7317',
 			600: '#d00000',
 			700: '#80b918',
 			800: '#1B1B1B',
 			850: '#585C62',
 			900: '#F7F7F7',
+
+			shade: '#e6f4fe',
 		},
 	},
 	fonts: {
