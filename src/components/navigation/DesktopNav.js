@@ -1,4 +1,4 @@
-import NAV_ITEMS from '@/data/navItems';
+import navItems from '../../data/navItems.json';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import {
 	Box,
@@ -17,7 +17,7 @@ import {
 export default function DesktopNav({ color, hoverColor }) {
 	return (
 		<HStack spacing={4}>
-			{NAV_ITEMS.map(navItem => (
+			{navItems.map(navItem => (
 				<Box key={navItem.label}>
 					<Popover
 						trigger={'hover'}
