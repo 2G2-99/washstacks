@@ -15,12 +15,12 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 			role="group"
 			href={url}
 			borderWidth={'1px'}
-			borderColor={'brand.200'}
+			borderColor={'blue.100'}
 			borderRadius={'.25rem'}
 			_hover={{
 				textDecoration: 'none',
-				backgroundColor: 'brand.250',
-				borderColor: 'brand.250',
+				backgroundColor: 'blue.50',
+				borderColor: 'blue.50',
 			}}
 		>
 			<Flex
@@ -42,8 +42,8 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 						className="slot-header"
 						textTransform={'uppercase'}
 						fontSize={'.75rem'}
-						color={'brand.850'}
-						_groupHover={{ color: 'brand.100' }}
+						color={'brand.grey'}
+						_groupHover={{ color: 'blue.300' }}
 					>
 						<Center mr={'.25rem'}>
 							<Icon as={icon} />
@@ -62,7 +62,7 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 				</Box>
 				<Icon
 					as={HiChevronRight}
-					color={'brand.100'}
+					color={'blue.300'}
 				/>
 			</Flex>
 		</Link>

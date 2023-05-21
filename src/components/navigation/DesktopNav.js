@@ -42,7 +42,7 @@ export default function DesktopNav({ color, hoverColor }) {
 							<PopoverContent
 								border={0}
 								boxShadow={'lg'}
-								bg={'brand.900'}
+								bg={'brand.white'}
 								p={4}
 								rounded={'md'}
 								minW={'sm'}
@@ -72,13 +72,13 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 			display={'block'}
 			p={2}
 			rounded={'md'}
-			_hover={{ bg: useColorModeValue('brand.shade', 'gray.900') }}
+			_hover={{ bg: useColorModeValue('shade', 'gray.900') }}
 		>
 			<HStack align={'center'}>
 				<Box>
 					<Text
 						transition={'all .3s ease'}
-						_groupHover={{ color: 'brand.150' }}
+						_groupHover={{ color: 'blue.200' }}
 						fontWeight={500}
 					>
 						{label}
@@ -95,7 +95,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 					flex={1}
 				>
 					<Icon
-						color={'brand.150'}
+						color={'blue.200'}
 						w={5}
 						h={5}
 						as={ChevronRightIcon}

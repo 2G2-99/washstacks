@@ -7,7 +7,7 @@ export function Fact({ icon, children = null, text }) {
 				w={'40px'}
 				h={'40px'}
 				mr={'1rem'}
-				bg={'brand.400'}
+				bg={'brand.yellow'}
 			>
 				{children !== null ? (
 					children

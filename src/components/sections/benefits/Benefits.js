@@ -46,10 +46,10 @@ export default function Benefits({}) {
 						<Circle
 							w={'22.5px'}
 							h={'22.5px'}
-							bg={'brand.800'}
+							bg={'brand.black'}
 						>
 							<Text
-								color={'brand.900'}
+								color={'brand.white'}
 								fontSize={'.9rem'}
 								fontWeight={'bold'}
 							>
@@ -84,7 +84,7 @@ export default function Benefits({}) {
 			<Divider
 				orientation="horizontal"
 				my={'5rem'}
-				borderColor={'brand.850'}
+				borderColor={'brand.grey'}
 			/>
 			<Content
 				direction={{ base: 'column-reverse', md: 'row-reverse' }}
@@ -103,7 +103,7 @@ export default function Benefits({}) {
 					<Circle
 						w={'40px'}
 						h={'40px'}
-						bg={'brand.400'}
+						bg={'brand.yellow'}
 						mr={'.5rem'}
 					>
 						<Icon
@@ -120,16 +120,16 @@ export default function Benefits({}) {
 					<Circle
 						w={'40px'}
 						h={'40px'}
-						bg={'brand.400'}
+						bg={'brand.yellow'}
 						mr={'.5rem'}
 					>
 						<Circle
 							w={'22.5px'}
 							h={'22.5px'}
-							bg={'brand.800'}
+							bg={'brand.black'}
 						>
 							<Text
-								color={'brand.900'}
+								color={'brand.white'}
 								fontSize={'.9rem'}
 								fontWeight={'bold'}
 							>
@@ -143,7 +143,7 @@ export default function Benefits({}) {
 			<Divider
 				orientation="horizontal"
 				my={'5rem'}
-				borderColor={'brand.850'}
+				borderColor={'brand.grey'}
 			/>
 			<Content
 				direction={{ base: 'column-reverse', md: 'row' }}
@@ -161,7 +161,7 @@ export default function Benefits({}) {
 				<Link
 					display={'inline-block'}
 					href={'#'}
-					bg={'brand.250'}
+					bg={'blue.50'}
 					borderRadius={'full'}
 					p={'.5rem'}
 					_hover={{ textDecor: 'none' }}
@@ -170,9 +170,9 @@ export default function Benefits({}) {
 						<Icon
 							as={IoChatbubbleEllipsesOutline}
 							boxSize={7}
-							color={'brand.100'}
+							color={'blue.300'}
 						/>
-						<Text color={'brand.100'}>Chat with us</Text>
+						<Text color={'blue.300'}>Chat with us</Text>
 					</HStack>
 				</Link>
 			</Content>

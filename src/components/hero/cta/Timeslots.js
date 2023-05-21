@@ -18,13 +18,13 @@ export default function Timeslots() {
 			>
 				<Text
 					as={'span'}
-					color={'brand.850'}
+					color={'brand.grey'}
 				>
 					Schedule your collection in{' '}
 					<Text
 						as={'span'}
 						fontWeight={'bold'}
-						color={'brand.800'}
+						color={'brand.black'}
 					>
 						London
 					</Text>
@@ -53,7 +53,7 @@ export default function Timeslots() {
 				/>
 				<Box
 					className="footer"
-					color={'brand.100'}
+					color={'blue.300'}
 					fontSize={'.875rem'}
 				>
 					<Link href={'#'}>See all slots</Link>

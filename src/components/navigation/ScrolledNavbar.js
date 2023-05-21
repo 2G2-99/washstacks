@@ -25,7 +25,7 @@ export default function ScrolledNavbar() {
 				py={{ base: '1.5rem', md: '2rem' }}
 				px={{ base: '1rem', md: '2.25rem' }}
 				align={'center'}
-				background={'brand.900'}
+				background={'brand.white'}
 				boxShadow={'xl'}
 			>
 				<Box mr={{ lg: '10' }}>
@@ -34,7 +34,7 @@ export default function ScrolledNavbar() {
 					</Link>
 				</Box>
 				<Flex display={{ base: 'none', lg: 'block' }}>
-					<DesktopNav color={'brand.800'} />
+					<DesktopNav color={'brand.black'} />
 				</Flex>
 				<Spacer flex={1} />
 				<Flex
@@ -45,7 +45,7 @@ export default function ScrolledNavbar() {
 						display={{ base: 'none', md: 'block' }}
 						pr={3}
 						fontWeight={600}
-						color={'brand.800'}
+						color={'brand.black'}
 						href={'/login'}
 						_hover={{
 							textDecoration: 'none',
@@ -62,11 +62,11 @@ export default function ScrolledNavbar() {
 						p={'.7rem 1.55rem'}
 						borderRadius={'4px'}
 						fontWeight={600}
-						color={'brand.900'}
-						bg={'brand.150'}
+						color={'brand.white'}
+						bg={'blue.200'}
 						href={'#'}
 						_hover={{
-							bg: 'brand.100',
+							bg: 'blue.300',
 						}}
 						transition={'.3s ease-in-out'}
 					>
@@ -78,11 +78,11 @@ export default function ScrolledNavbar() {
 						p={'.7rem'}
 						borderRadius={'4px'}
 						fontWeight={600}
-						color={'brand.900'}
-						bg={'brand.150'}
+						color={'brand.white'}
+						bg={'blue.200'}
 						href={'#'}
 						_hover={{
-							bg: 'brand.100',
+							bg: 'blue.300',
 						}}
 						transition={'.3s ease-in-out'}
 					>
@@ -96,7 +96,7 @@ export default function ScrolledNavbar() {
 						}
 						variant={'ghost'}
 						aria-label={'Toggle Navigation'}
-						color={'brand.900'}
+						color={'brand.white'}
 						_hover={{
 							bg: 'none',
 						}}

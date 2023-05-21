@@ -30,7 +30,7 @@ export default function Content({
 					mb={'1rem'}
 					textTransform={'uppercase'}
 					fontWeight={'bold'}
-					color={'brand.850'}
+					color={'brand.grey'}
 				>
 					{catchphrase}
 				</Text>
@@ -41,7 +41,7 @@ export default function Content({
 					{benefitTitle}
 				</Heading>
 				<Text
-					color={'brand.850'}
+					color={'brand.grey'}
 					mb={'1rem'}
 				>
 					{benefitText}

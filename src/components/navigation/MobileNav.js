@@ -15,7 +15,7 @@ import navItems from '@/data/navItems';
 export default function MobileNav() {
 	return (
 		<Stack
-			bg={useColorModeValue('brand.900', 'gray.800')}
+			bg={useColorModeValue('brand.white', 'gray.800')}
 			p={4}
 		>
 			{navItems.map(navItem => (
