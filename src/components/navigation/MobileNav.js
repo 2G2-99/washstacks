@@ -10,7 +10,7 @@ import {
 	useDisclosure,
 } from '@chakra-ui/react';
 
-import NAV_ITEMS from '@/data/navItems';
+import navItems from '@/data/navItems';
 
 export default function MobileNav() {
 	return (
@@ -18,7 +18,7 @@ export default function MobileNav() {
 			bg={useColorModeValue('brand.900', 'gray.800')}
 			p={4}
 		>
-			{NAV_ITEMS.map(navItem => (
+			{navItems.map(navItem => (
 				<MobileNavItem
 					key={navItem.label}
 					{...navItem}
