@@ -1,6 +1,6 @@
 import { Center, Circle, Icon, Text, Th } from '@chakra-ui/react';
 
-export default function ColumnHeader({
+export default function HeaderCell({
 	bgHeader,
 	bgCircle,
 	position,

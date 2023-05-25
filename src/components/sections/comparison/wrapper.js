@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Text, VStack } from '@chakra-ui/react';
+import { Center, Container, Heading, Text, VStack } from '@chakra-ui/react';
 import ServicesTable from './services';
 
 export default function ServiceComparison() {
@@ -12,9 +12,9 @@ export default function ServiceComparison() {
 					our services
 				</Heading>
 			</Container>
-			<Box id={'service-comparison_content'} width={'full'}>
+			<Center id={'service-comparison_content'}>
 				<ServicesTable />
-			</Box>
+			</Center>
 		</VStack>
 	);
 }

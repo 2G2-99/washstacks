@@ -2,6 +2,8 @@ import {
 	Table,
 	TableCaption,
 	TableContainer,
+	Tbody,
+	Td,
 	Th,
 	Thead,
 	Tr,
@@ -9,12 +11,23 @@ import {
 
 import { MdWater, MdOutlineIron } from 'react-icons/md';
 import { WiStrongWind } from 'react-icons/wi';
-import ColumnHeader from './ColumnHeader';
+import HeaderCell from './HeaderCell';
+import DataCell from './DataCell';
 
 export default function ServicesTable() {
 	return (
-		<TableContainer p={'1rem'}>
-			<Table>
+		<TableContainer
+			id="service-comparison_table_container"
+			p={'1rem'}
+			w={'100%'}
+		>
+			<Table
+				id="service-comparison_table"
+				variant={'striped'}
+				colorScheme={'gray'}
+				overflowX={'scroll'}
+				whiteSpace={'normal'}
+			>
 				<TableCaption color={'white'}>
 					Our minimum order value is £20.
 				</TableCaption>
@@ -23,18 +36,18 @@ export default function ServicesTable() {
 					<Tr>
 						<Th
 							bg={'white'}
-							w={'168px'}
+							w={'148px'}
 							h={'128px'}
 							borderTopLeftRadius={'md'}
 						/>
 
-						<ColumnHeader
+						<HeaderCell
 							bgHeader={'blue.50'}
 							bgCircle={'blue.200'}
 							icon1={MdWater}
 							text={'Wash'}
 						/>
-						<ColumnHeader
+						<HeaderCell
 							bgHeader={'pink.50'}
 							bgCircle={'pink.100'}
 							position={'relative'}
@@ -43,13 +56,13 @@ export default function ServicesTable() {
 							icon2={MdWater}
 							text={'Wash & Iron'}
 						/>
-						<ColumnHeader
+						<HeaderCell
 							bgHeader={'turquoise.50'}
 							bgCircle={'turquoise.100'}
 							icon1={WiStrongWind}
 							text={'Dry Cleaning'}
 						/>
-						<ColumnHeader
+						<HeaderCell
 							bgHeader={'yellow.50'}
 							bgCircle={'yellow.100'}
 							icon1={MdOutlineIron}
@@ -57,6 +70,28 @@ export default function ServicesTable() {
 						/>
 					</Tr>
 				</Thead>
+				<Tbody>
+					<Tr>
+						<DataCell
+							text1={'What is included'}
+							textAlign={'left'}
+							fontWeight={'bold'}
+							fontSize1={'1.5rem'}
+							color1={'blue.400'}
+						/>
+						<DataCell
+							text1={'WASH + TUMBLE +DRY'}
+							fontWeight={'bold'}
+							text2={'INCLUDES'}
+						/>
+						<DataCell
+							text1={'WASH + TUMBLE-DRY+ IRONING'}
+							fontWeight={'bold'}
+						/>
+						<DataCell text1={'DRY CLEANING + IRONING'} fontWeight={'bold'} />
+						<DataCell text1={'IRONING'} fontWeight={'bold'} />
+					</Tr>
+				</Tbody>
 			</Table>
 		</TableContainer>
 	);
