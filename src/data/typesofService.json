@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"service": "Wash",
+		"includes": "WASH + TUMBLE-DRY",
+		"included-items": "T-shirts, trousers, bedsheets and undergarments.",
+		"service-time": "24h*",
+		"pricing": "£16.95",
+		"delivery": "FREE",
+		"returned": "IN A LAUNDRYHEAP BAG"
+	},
+	{
+		"id": 2,
+		"service": "Wash & Iron",
+		"includes": "WASH + TUMBLE-DRY + IRONING",
+		"included-items": "Shirts, t-shirts, trousers and bedsheets.",
+		"service-time": "24h*",
+		"pricing": "£2",
+		"delivery": "FREE",
+		"returned": "ON HANGERS"
+	},
+	{
+		"id": 3,
+		"service": "Dry Cleaning",
+		"includes": "DRY CLEANING + IRONING",
+		"included-items": "Suits, shirts, dresses and coats.",
+		"service-time": "24h*",
+		"pricing": "£2",
+		"delivery": "FREE",
+		"returned": "ON HANGERS"
+	},
+	{
+		"id": 4,
+		"service": "Ironing",
+		"includes": "IRONING",
+		"included-items": "Shirts, t-shirts and bedsheets.",
+		"service-time": "24h*",
+		"pricing": "£1.20",
+		"delivery": "FREE",
+		"returned": "ON HANGERS"
+	},
+	{
+		"id": 5,
+		"service": "Duvets & Bulky Items",
+		"includes": "CUSTOM CLEANING",
+		"included-items": "Duvets, pillows and blankets.",
+		"service-time": "Up to 3 days",
+		"pricing": "£10.95",
+		"delivery": "FREE",
+		"returned": "IN A LAUNDRYHEAP BAG"
+	}
+]

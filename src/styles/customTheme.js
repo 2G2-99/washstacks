@@ -13,6 +13,7 @@ const customTheme = extendTheme({
 			300: '#2364aa',
 			400: '#202B93',
 		},
+		lighterBlue: { 50: '#DCF5FF', 100: '#BAEBFF' },
 		turquoise: { 50: '#93ECE5', 100: '#2FCCBF' },
 		pink: { 50: '#FBB4C2', 100: '#EF8EA2' },
 		yellow: { 50: '#FFE5AE', 100: '#ffd06d' },

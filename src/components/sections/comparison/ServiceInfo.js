@@ -1,10 +1,11 @@
-import { Icon, Show, Td, Text } from '@chakra-ui/react';
+import { Box, Show, Text, Icon, Center } from '@chakra-ui/react';
 
-export default function DataCell({
+export default function ServiceInfo({
+	bgColor = 'white',
 	text1,
 	textAlign = 'center',
 	fontWeight,
-	fontSize1 = '.75rem',
+	fontSize1,
 	color1 = 'black',
 	text2,
 	color2 = 'black',
@@ -12,7 +13,7 @@ export default function DataCell({
 	icon2,
 }) {
 	return (
-		<Td w={'148px'} h={'72px'}>
+		<Center w={'168px'} h={'72px'} p={'.75rem'} bgColor={bgColor}>
 			<Show below="sm">
 				<Text fontSize={'.75rem'} color={color2} textAlign={'center'}>
 					{text2}
@@ -47,6 +48,6 @@ export default function DataCell({
 			>
 				{text1}
 			</Text>
-		</Td>
+		</Center>
 	);
 }
