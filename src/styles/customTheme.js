@@ -2,23 +2,28 @@ import { extendTheme } from '@chakra-ui/react';
 
 const customTheme = extendTheme({
 	colors: {
-		brand: {
-			100: '#2364aa',
-			150: '#0890f1',
-			200: '#32a3f3',
-			250: '#bbebff',
-			300: '#2fccc0',
-			400: '#ffd06d',
-			500: '#ea7317',
-			600: '#d00000',
-			700: '#80b918',
-			800: '#1B1B1B',
-			850: '#585C62',
-			900: '#F7F7F7',
-
-			shade: '#e6f4fe',
+		shade: '#e6f4fe',
+		white: '#F7F7F7',
+		grey: '#585C62',
+		black: '#1B1B1B',
+		blue: {
+			50: '#bbebff',
+			100: '#32a3f3',
+			200: '#0890f1',
+			300: '#2364aa',
+			400: '#202B93',
+		},
+		lighterBlue: { 50: '#DCF5FF', 100: '#BAEBFF' },
+		turquoise: { 50: '#93ECE5', 100: '#2FCCBF' },
+		pink: { 50: '#FBB4C2', 100: '#EF8EA2' },
+		yellow: { 50: '#FFE5AE', 100: '#ffd06d' },
+		alert: {
+			success: '#80b918',
+			warning: '#ea7317',
+			danger: '#d00000',
 		},
 	},
+
 	fonts: {
 		heading: `Cabin, sans-serif`,
 		body: `Roboto Flex, sans-serif`,

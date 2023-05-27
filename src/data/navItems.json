@@ -1,40 +1,40 @@
 [
-	{
-		"id": "01",
-		"label": "How it works"
-	},
-	{
-		"id": "02",
-		"label": "Prices & Services",
-		"children": [
-			{
-				"id": "01",
-				"label": "Wash",
-				"subLabel": "For everyday laundry, bedsheets and towels",
-				"href": "#"
-			},
-			{
-				"id": "02",
-				"label": "Wash & Iron",
-				"subLabel": "For everyday laundry that requires ironing",
-				"href": "#"
-			},
-			{
-				"id": "03",
-				"label": "Dry Cleaning",
-				"subLabel": "For delicate items and fabrics",
-				"href": "#,"
-			}
-		]
-	},
-	{
-		"id": "03",
-		"label": "About us",
-		"href": "#"
-	},
-	{
-		"id": "04",
-		"label": "FAQ",
-		"href": "#"
-	}
+  {
+    "id": "01",
+    "label": "How it works"
+  },
+  {
+    "id": "02",
+    "label": "Prices & Services",
+    "children": [
+      {
+        "id": "01",
+        "label": "Wash",
+        "subLabel": "For everyday laundry, bedsheets and towels",
+        "href": "#"
+      },
+      {
+        "id": "02",
+        "label": "Wash & Iron",
+        "subLabel": "For everyday laundry that requires ironing",
+        "href": "#"
+      },
+      {
+        "id": "03",
+        "label": "Dry Cleaning",
+        "subLabel": "For delicate items and fabrics",
+        "href": "#,"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "label": "About us",
+    "href": "#"
+  },
+  {
+    "id": "04",
+    "label": "FAQ",
+    "href": "#"
+  }
 ]
