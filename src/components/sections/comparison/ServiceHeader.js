@@ -42,7 +42,6 @@ export default function ServiceHeader({
 									as={icon2}
 									position={'absolute'}
 									bottom={-0.25}
-									zIndex={99}
 									fontSize={'1.5rem'}
 									color={'blue.400'}
 								/>
