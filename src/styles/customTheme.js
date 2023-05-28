@@ -1,5 +1,16 @@
 import { extendTheme } from '@chakra-ui/react';
 
+import { Cabin, Roboto_Flex } from 'next/font/google';
+
+export const cabin = Cabin({
+	subsets: ['latin'],
+	display: 'swap',
+});
+export const roboto_flex = Roboto_Flex({
+	subsets: ['latin'],
+	display: 'swap',
+});
+
 const customTheme = extendTheme({
 	colors: {
 		shade: '#e6f4fe',
@@ -25,8 +36,8 @@ const customTheme = extendTheme({
 	},
 
 	fonts: {
-		heading: `Cabin, sans-serif`,
-		body: `Roboto Flex, sans-serif`,
+		heading: cabin.style.fontFamily,
+		body: roboto_flex.style.fontFamily,
 	},
 });
 
