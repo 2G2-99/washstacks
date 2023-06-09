@@ -1,5 +1,4 @@
-import { Box, Grid, GridItem } from '@chakra-ui/react';
-import typesOfService from '../../../data/typesOfService.json';
+import { Grid, GridItem } from '@chakra-ui/react';
 
 import { MdWater, MdOutlineIron } from 'react-icons/md';
 import { WiStrongWind } from 'react-icons/wi';

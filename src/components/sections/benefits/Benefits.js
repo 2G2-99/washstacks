@@ -23,10 +23,7 @@ export default function Benefits({}) {
 			px={{ lg: '1rem' }}
 			py={'5rem'}
 		>
-			<Container
-				id="benefits-header"
-				centerContent
-			>
+			<Container id="benefits-header" centerContent>
 				<Heading
 					id="benefits-statement"
 					as={'h2'}
@@ -46,24 +43,13 @@ export default function Benefits({}) {
 					justify={'center'}
 				>
 					<Fact text={'24h turnaround time'}>
-						<Circle
-							w={'22.5px'}
-							h={'22.5px'}
-							bg={'black'}
-						>
-							<Text
-								color={'white'}
-								fontSize={'.9rem'}
-								fontWeight={'bold'}
-							>
+						<Circle w={'22.5px'} h={'22.5px'} bg={'black'}>
+							<Text color={'white'} fontSize={'.9rem'} fontWeight={'bold'}>
 								24
 							</Text>
 						</Circle>
 					</Fact>
-					<Fact
-						icon={FaTruck}
-						text={'Free collection and delivery'}
-					/>
+					<Fact icon={FaTruck} text={'Free collection and delivery'} />
 					<Fact
 						icon={IoChatbubbleEllipsesOutline}
 						text={'Dedicated 24/7 support'}
@@ -84,11 +70,7 @@ export default function Benefits({}) {
 			>
 				<Link href={'#'}>See how it works</Link>
 			</Content>
-			<Divider
-				orientation="horizontal"
-				my={'5rem'}
-				borderColor={'grey'}
-			/>
+			<Divider orientation="horizontal" my={'5rem'} borderColor={'grey'} />
 			<Content
 				direction={{ base: 'column-reverse', md: 'row-reverse' }}
 				image={
@@ -99,43 +81,16 @@ export default function Benefits({}) {
 				catchphrase={'24h turnaround time'}
 				benefitTitle={'No need to plan in advance'}
 			>
-				<Flex
-					mb={'.5rem'}
-					align={'center'}
-				>
-					<Circle
-						w={'40px'}
-						h={'40px'}
-						bg={'yellow.100'}
-						mr={'.5rem'}
-					>
-						<Icon
-							as={FaCalendarCheck}
-							display={'block'}
-						/>
+				<Flex mb={'.5rem'} align={'center'}>
+					<Circle w={'40px'} h={'40px'} bg={'yellow.100'} mr={'.5rem'}>
+						<Icon as={FaCalendarCheck} display={'block'} />
 					</Circle>
 					<Text fontWeight={'bold'}>Schedule a collection today</Text>
 				</Flex>
-				<Flex
-					mb={'.5rem'}
-					align={'center'}
-				>
-					<Circle
-						w={'40px'}
-						h={'40px'}
-						bg={'yellow.100'}
-						mr={'.5rem'}
-					>
-						<Circle
-							w={'22.5px'}
-							h={'22.5px'}
-							bg={'black'}
-						>
-							<Text
-								color={'white'}
-								fontSize={'.9rem'}
-								fontWeight={'bold'}
-							>
+				<Flex mb={'.5rem'} align={'center'}>
+					<Circle w={'40px'} h={'40px'} bg={'yellow.100'} mr={'.5rem'}>
+						<Circle w={'22.5px'} h={'22.5px'} bg={'black'}>
+							<Text color={'white'} fontSize={'.9rem'} fontWeight={'bold'}>
 								24
 							</Text>
 						</Circle>
@@ -143,11 +98,7 @@ export default function Benefits({}) {
 					<Text fontWeight={'bold'}>Get your laundry back in 24h</Text>
 				</Flex>
 			</Content>
-			<Divider
-				orientation="horizontal"
-				my={'5rem'}
-				borderColor={'grey'}
-			/>
+			<Divider orientation="horizontal" my={'5rem'} borderColor={'grey'} />
 			<Content
 				direction={{ base: 'column-reverse', md: 'row' }}
 				image={

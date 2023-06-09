@@ -5,10 +5,7 @@ import customTheme from '@/styles/customTheme';
 
 export default function App({ Component, pageProps }) {
 	return (
-		<ChakraProvider
-			resetCSS
-			theme={customTheme}
-		>
+		<ChakraProvider resetCSS theme={customTheme}>
 			<Component {...pageProps} />
 		</ChakraProvider>
 	);
