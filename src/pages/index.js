@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Hero from '@/components/hero/Hero';
 import Benefits from '@/components/sections/benefits/Benefits';
 import ServiceComparison from '@/components/sections/comparison/ServiceComparison';
+import Reviews from '@/components/sections/reviews/Reviews';
 
 export default function Home() {
 	return (
@@ -12,8 +13,8 @@ export default function Home() {
 			</Head>
 			<Hero />
 			<Benefits />
-
 			<ServiceComparison />
+			<Reviews />
 		</Layout>
 	);
 }
