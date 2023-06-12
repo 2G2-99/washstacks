@@ -15,16 +15,22 @@ export default function UserReview({
 	userName,
 }) {
 	return (
-		<Card boxShadow={'none'} w>
+		<Card
+			boxShadow={'none'}
+			minW={{ base: '80%', md: '33.33%' }}
+			sx={{ scrollSnapAlign: 'start' }}
+		>
 			<CardBody>
 				<Text>{testimonial}</Text>
 			</CardBody>
 			<CardFooter pt={0}>
-				<Box boxSize={'44px'} position={'relative'} mr={1}>
+				<Box boxSize={'44px'} position={'relative'} mr={1.5}>
 					<Image
 						src={imageSource}
 						fallbackSrc={fallbackImageSource}
+						alt="User photo"
 						fill
+						sizes="(max-width: 30em) 44px, (max-width: 80em) 44px"
 						rounded="full"
 						loading="lazy"
 						placeholder="blur"
@@ -35,6 +41,7 @@ export default function UserReview({
 					<Image
 						src="https://prod-cdn.laundryheap.com/assets/landing/testimonials/stars_2-7bf43dd2b54116645eb9b9ad39d73b5555092bce4bd867904a2829a1a6166744.svg"
 						fallbackSrc="/svg/stars_5.svg"
+						alt="Five stars review"
 						width={91}
 						height={17}
 					/>
@@ -43,24 +50,3 @@ export default function UserReview({
 		</Card>
 	);
 }
-
-/**
- * <Box px={6}>
-			<Text mb={4}>{testimonial}</Text>
-			<Flex justify={'flex-start'}>
-				<Image
-					src={imageSource}
-					fallbackSrc={fallbackImageSource}
-					boxSize={'44px'}
-					rounded={'full'}
-				/>
-				<VStack>
-					<Text>{userName}</Text>
-					<Image
-						src="https://prod-cdn.laundryheap.com/assets/landing/testimonials/stars_2-7bf43dd2b54116645eb9b9ad39d73b5555092bce4bd867904a2829a1a6166744.svg"
-						fallbackSrc="/svg/stars_5.svg"
-					/>
-				</VStack>
-			</Flex>
-		</Box>
- */

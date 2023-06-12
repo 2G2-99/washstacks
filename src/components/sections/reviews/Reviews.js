@@ -1,6 +1,7 @@
 import { Link } from '@chakra-ui/next-js';
 import {
 	Box,
+	Center,
 	Container,
 	Flex,
 	HStack,
@@ -41,124 +42,32 @@ export default function Reviews() {
 					wrap={'nowrap'}
 					align={'start'}
 					justify={'start'}
-					overflowX={'scroll'}
+					overflowX={'auto'}
 					scrollSnapStop={'always'}
 					sx={{
-						'::-webkit-scrollbar': {
+						scrollSnapType: 'x mandatory',
+						'&::-webkit-scrollbar': {
 							display: 'none',
 						},
 					}}
 				>
 					<UserReview
-						userName={'Sophie'}
-						testimonial={`They're a great service when they pickup and deliver on time. Given my busy schedule, I appreciate having a service that I can rely on.`}
-						imageSource={'/img/michael-dam-girl_1.jpg'}
+						userName={'Martin'}
+						testimonial={`This entire laundry experience was an absolute delight. The professionalism, efficiency, staff politeness, quality of service, and reasonable cost were all impressive. The service providers gave much-appreciated updates about all steps in the process. I highly recommend Laundryheap. They have perfected the art and science of laundry delivery service..`}
+						imageSource={'/img/jurica-koletic.jpg'}
 					/>
 					<UserReview
 						userName={'Sophie'}
-						testimonial={`They're a great service when they pickup and deliver on time. Given my busy schedule, I appreciate having a service that I can rely on.`}
+						testimonial={`Been using Laundryheap on and off for about 18 months and I've always had great experiences with them. The tracking on collection and drop off is really helpful and the app works well.`}
 						imageSource={'/img/michael-dam-girl_1.jpg'}
 					/>
 					<UserReview
-						userName={'Sophie'}
-						testimonial={`They're a great service when they pickup and deliver on time. Given my busy schedule, I appreciate having a service that I can rely on.`}
-						imageSource={'/img/michael-dam-girl_1.jpg'}
+						userName={'Joseph'}
+						testimonial={`Great prices, excellent service and always on time. Best laundry service in United Kingdom!`}
+						imageSource={'/img/joseph-gonzalez.jpg'}
 					/>
 				</Flex>
 			</Container>
 		</Box>
 	);
 }
-
-/**
- * TODO: Find a way to make the card list to scroll on overflow
- * <Flex
-					wrap={'nowrap'}
-					align={'start'}
-					justify={'start'}
-					overflowX={'scroll'}
-					scrollSnapStop={'always'}
-					sx={{
-						'::-webkit-scrollbar': {
-							display: 'none',
-						},
-					}}
-				>
-					<Box w={{ base: '100%', md: '33.33%' }}>
-						<UserReview
-							userName={'Sophie'}
-							testimonial={`They're a great service when they pickup and deliver on time. Given my busy schedule, I appreciate having a service that I can rely on.`}
-							imageSource={'/img/michael-dam-girl_1.jpg'}
-						/>
-					</Box>
-					<Box w={{ base: '100%', md: '33.33%' }}>
-						<UserReview
-							userName={'Sophie'}
-							testimonial={`They're a great service when they pickup and deliver on time. Given my busy schedule, I appreciate having a service that I can rely on.`}
-							imageSource={'/img/michael-dam-girl_1.jpg'}
-						/>
-					</Box>
-					<Box w={{ base: '100%', md: '33.33%' }}>
-						<UserReview
-							userName={'Sophie'}
-							testimonial={`They're a great service when they pickup and deliver on time. Given my busy schedule, I appreciate having a service that I can rely on.`}
-							imageSource={'/img/michael-dam-girl_1.jpg'}
-						/>
-					</Box>
-				</Flex> */
-
-/**
-* ? Implementing this might do the job
-import { Box, Text, Image, Flex } from "@chakra-ui/react";
-
-function ReviewCardList() {
-  return (
-    <Flex wrap="nowrap" className="review-card-list">
-      <Box
-        w={{ base: "100%", md: "33.33%" }}
-        p={6}
-        className="review-card"
-        borderWidth={1}
-        borderRadius="lg"
-        overflow="hidden"
-      >
-        <Text fontSize="md" mb={4} className="review-body text-body-main">
-          Been using Laundryheap on and off for about 18 months and I've always
-          ...
-        </Text>
-        <Flex align="center" mb={4}>
-          <Box className="name-image" mr={2}>
-            <Image
-              src="https://prod-cdn.laundryheap.com/assets/faces/female/2-1970a7ddfc4bb424657a57d70c3341deef6b4d97773a773a1e12ddf6e602998f.jpg"
-              alt="User Image"
-              boxSize="44px"
-            />
-          </Box>
-          <Box className="name-body">
-            <Text fontSize="lg" className="review-name text-body-main">
-              Maya
-            </Text>
-            <Image
-              src="https://prod-cdn.laundryheap.com/assets/landing/testimonials/stars_2-7bf43dd2b54116645eb9b9ad39d73b5555092bce4bd867904a2829a1a6166744.svg"
-              alt="Review Stars"
-              boxSize="91px"
-              mb={3}
-              display="block"
-            />
-          </Box>
-        </Flex>
-        <Image
-          src="https://prod-cdn.laundryheap.com/assets/landing/testimonials/brands/google-9ff79bfdc82bf8cba6ed43bcfe794af0ffb4dcd6a2db89b43b5489b924ea489a.png"
-          alt="Google Logo"
-          boxSize="104px"
-          display="block"
-        />
-      </Box>
-      ...Add other review cards here ...
-    </Flex>
-  );
-}
-
-export default ReviewCardList;
-
-				 */
