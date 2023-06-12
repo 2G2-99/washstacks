@@ -8,7 +8,7 @@ import {
 	Box,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import Logo from '../../assets/svg/brand/logo.svg';
+import Logo from '../../assets/svg/brand/logo/logo.svg';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import { Link } from '@chakra-ui/next-js';
