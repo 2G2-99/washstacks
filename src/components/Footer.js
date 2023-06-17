@@ -14,7 +14,7 @@ import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 import AppStoreBadge from '../assets/svg/app-store-black.svg';
 import PlayStoreBadge from '../assets/svg/google-play-black.svg';
-import Logo from '../assets/svg/brand/v1.svg';
+import Logo from '../assets/svg/brand/logo/logo.svg';
 
 const ListHeader = ({ children }) => {
 	return (
