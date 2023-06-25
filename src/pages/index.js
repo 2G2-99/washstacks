@@ -5,6 +5,7 @@ import Benefits from '@/components/sections/benefits/Benefits';
 import ServiceComparison from '@/components/sections/comparison/ServiceComparison';
 import Reviews from '@/components/sections/reviews/Reviews';
 import AboutUs from '@/components/sections/about/AboutUs';
+import AppDownload from '@/components/sections/app-download/AppDownload';
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 			<ServiceComparison />
 			<Reviews />
 			<AboutUs />
+			{/* <AppDownload /> */}
 		</Layout>
 	);
 }

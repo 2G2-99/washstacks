@@ -9,11 +9,10 @@ import {
 	Text,
 	Icon,
 	Divider,
-	Circle,
 	HStack,
 } from '@chakra-ui/react';
 import Content from './Content';
-import { Fact } from './Fact';
+import BenefitsIconItem from '@/components/BenefitsIconItem';
 
 export default function Benefits({}) {
 	return (
@@ -42,17 +41,14 @@ export default function Benefits({}) {
 					align={{ base: 'start', sm: 'center' }}
 					justify={'center'}
 				>
-					<Fact text={'24h turnaround time'}>
-						<Circle w={'22.5px'} h={'22.5px'} bg={'black'}>
-							<Text color={'white'} fontSize={'.9rem'} fontWeight={'bold'}>
-								24
-							</Text>
-						</Circle>
-					</Fact>
-					<Fact icon={FaTruck} text={'Free collection and delivery'} />
-					<Fact
+					<BenefitsIconItem text={'24'} benefit={'24h turnaround time'} />
+					<BenefitsIconItem
+						icon={FaTruck}
+						benefit={'Free collection and delivery'}
+					/>
+					<BenefitsIconItem
 						icon={IoChatbubbleEllipsesOutline}
-						text={'Dedicated 24/7 support'}
+						benefit={'Dedicated 24/7 support'}
 					/>
 				</Flex>
 			</Container>
@@ -81,22 +77,11 @@ export default function Benefits({}) {
 				catchphrase={'24h turnaround time'}
 				benefitTitle={'No need to plan in advance'}
 			>
-				<Flex mb={'.5rem'} align={'center'}>
-					<Circle w={'40px'} h={'40px'} bg={'yellow.100'} mr={'.5rem'}>
-						<Icon as={FaCalendarCheck} display={'block'} />
-					</Circle>
-					<Text fontWeight={'bold'}>Schedule a collection today</Text>
-				</Flex>
-				<Flex mb={'.5rem'} align={'center'}>
-					<Circle w={'40px'} h={'40px'} bg={'yellow.100'} mr={'.5rem'}>
-						<Circle w={'22.5px'} h={'22.5px'} bg={'black'}>
-							<Text color={'white'} fontSize={'.9rem'} fontWeight={'bold'}>
-								24
-							</Text>
-						</Circle>
-					</Circle>
-					<Text fontWeight={'bold'}>Get your laundry back in 24h</Text>
-				</Flex>
+				<BenefitsIconItem
+					icon={FaCalendarCheck}
+					benefit={'Schedule a collection today'}
+				/>
+				<BenefitsIconItem text={24} benefit={'Get your laundry back in 24h'} />
 			</Content>
 			<Divider orientation="horizontal" my={'5rem'} borderColor={'grey'} />
 			<Content
