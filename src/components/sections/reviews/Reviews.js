@@ -1,15 +1,9 @@
 import { Link } from '@chakra-ui/next-js';
-import {
-	Box,
-	Center,
-	Container,
-	Flex,
-	HStack,
-	Heading,
-	Image,
-	Text,
-} from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import UserReview from './UserReview';
+import josephPic from 'public/img/joseph-gonzalez.jpg';
+import girlPic from 'public/img/michael-dam-girl_1.jpg';
+import juricaPic from 'public/img/jurica-koletic.jpg';
 
 export default function Reviews() {
 	return (
@@ -54,17 +48,17 @@ export default function Reviews() {
 					<UserReview
 						userName={'Martin'}
 						testimonial={`This entire laundry experience was an absolute delight. The professionalism, efficiency, staff politeness, quality of service, and reasonable cost were all impressive. The service providers gave much-appreciated updates about all steps in the process. I highly recommend Laundryheap. They have perfected the art and science of laundry delivery service..`}
-						imageSource={'/img/jurica-koletic.jpg'}
+						imageSource={juricaPic}
 					/>
 					<UserReview
 						userName={'Sophie'}
 						testimonial={`Been using Laundryheap on and off for about 18 months and I've always had great experiences with them. The tracking on collection and drop off is really helpful and the app works well.`}
-						imageSource={'/img/michael-dam-girl_1.jpg'}
+						imageSource={girlPic}
 					/>
 					<UserReview
 						userName={'Joseph'}
 						testimonial={`Great prices, excellent service and always on time. Best laundry service in United Kingdom!`}
-						imageSource={'/img/joseph-gonzalez.jpg'}
+						imageSource={josephPic}
 					/>
 				</Flex>
 			</Container>

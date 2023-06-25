@@ -14,3 +14,5 @@ export function Fact({ icon, children = null, text }) {
 		</Center>
 	);
 }
+
+// ! Deprecated. Now BenefitsIconItem is being implemented

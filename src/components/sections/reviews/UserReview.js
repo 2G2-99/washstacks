@@ -1,4 +1,3 @@
-import { Image } from '@chakra-ui/next-js';
 import {
 	Box,
 	Card,
@@ -7,6 +6,7 @@ import {
 	Text,
 	VStack,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export default function UserReview({
 	testimonial,
@@ -24,23 +24,19 @@ export default function UserReview({
 				<Text>{testimonial}</Text>
 			</CardBody>
 			<CardFooter pt={0}>
-				<Box boxSize={'44px'} position={'relative'} mr={1.5}>
-					<Image
-						src={imageSource}
-						fallbackSrc={fallbackImageSource}
-						alt="User photo"
-						fill
-						sizes="(max-width: 30em) 44px, (max-width: 80em) 44px"
-						rounded="full"
-						loading="lazy"
-						placeholder="blur"
-					/>
-				</Box>
+				<Image
+					src={imageSource}
+					alt="User photo"
+					width={48}
+					height={48}
+					placeholder="blur"
+					quality={100}
+					style={{ borderRadius: '50%', marginRight: '.375rem' }}
+				/>
 				<VStack align={'flex-start'} spacing={0}>
 					<Text fontWeight={'bold'}>{userName}</Text>
 					<Image
-						src="https://prod-cdn.laundryheap.com/assets/landing/testimonials/stars_2-7bf43dd2b54116645eb9b9ad39d73b5555092bce4bd867904a2829a1a6166744.svg"
-						fallbackSrc="/svg/stars_5.svg"
+						src="/svg/stars_5.svg"
 						alt="Five stars review"
 						width={91}
 						height={17}
