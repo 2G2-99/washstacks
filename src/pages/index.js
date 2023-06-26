@@ -18,7 +18,7 @@ export default function Home() {
 			<ServiceComparison />
 			<Reviews />
 			<AboutUs />
-			{/* <AppDownload /> */}
+			<AppDownload />
 		</Layout>
 	);
 }
