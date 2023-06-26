@@ -11,13 +11,14 @@ export default function () {
 		<Box py={20}>
 			<Container maxW={'container.lg'}>
 				<Flex
+					gap={{ base: 10, md: 0 }}
 					mb={10}
 					direction={{ base: 'column', md: 'row' }}
 					justify={'center'}
 					align={'center'}
 				>
 					<Box px={3} flex={1}>
-						<Heading as={'h3'} mb={8}>
+						<Heading as={'h3'} fontSize={'5xl'} mb={8}>
 							Your Laundry and Dry cleaning solution just a click away
 						</Heading>
 						<Box>
@@ -43,14 +44,14 @@ export default function () {
 							/>
 						</Box>
 					</Box>
-					<Box w={'23.3rem'} h={'17.15rem'} flex={1}>
+					<Flex flex={1} justify={'flex-end'}>
 						<Image
 							src={'/img/washstacks-app.png'}
 							width={373}
 							height={275}
 							alt="Screenshot of the WashStacks app form"
 						/>
-					</Box>
+					</Flex>
 				</Flex>
 				<Flex justify={'flex-start'} align={'center'}>
 					<GetAppCard />
