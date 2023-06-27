@@ -14,7 +14,7 @@ import navItems from '@/data/navItems';
 
 export default function MobileNav() {
 	return (
-		<Stack bg={useColorModeValue('white', 'gray.800')} p={4}>
+		<Stack bg={useColorModeValue('white.50', 'gray.800')} p={4}>
 			{navItems.map((navItem) => (
 				<MobileNavItem key={navItem.label} {...navItem} />
 			))}
@@ -63,12 +63,11 @@ const MobileNavItem = ({ label, children, href }) => {
 					borderColor={useColorModeValue('gray.200', 'gray.700')}
 					align={'start'}
 				>
-					{children &&
-						children.map((child) => (
-							<Link key={child.label} py={2} href={child.href}>
-								{child.label}
-							</Link>
-						))}
+					{children?.map((child) => (
+						<Link key={child.label} py={2} href={child.href}>
+							{child.label}
+						</Link>
+					))}
 				</Stack>
 			</Collapse>
 		</Stack>
