@@ -13,7 +13,7 @@ export default function BenefitsIconItem({
 					<Icon as={icon} display={'block'} boxSize={6} />
 				) : (
 					<Circle boxSize={6} bg={'black'}>
-						<Text color={'white'} fontSize={'md'} fontWeight={'bold'}>
+						<Text color={'white.50'} fontSize={'md'} fontWeight={'bold'}>
 							{text}
 						</Text>
 					</Circle>

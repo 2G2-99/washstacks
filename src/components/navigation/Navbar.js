@@ -33,7 +33,7 @@ export default function Navbar() {
 					</Link>
 				</Box>
 				<Flex display={{ base: 'none', lg: 'block' }}>
-					<DesktopNav color={'white'} />
+					<DesktopNav color={'white.50'} />
 				</Flex>
 				<Spacer flex={1} />
 				<Flex align={'center'} gap={2}>
@@ -41,7 +41,7 @@ export default function Navbar() {
 						display={{ base: 'none', md: 'block' }}
 						pr={3}
 						fontWeight={600}
-						color={'white'}
+						color={'white.50'}
 						href={'/login'}
 						_hover={{
 							textDecoration: 'none',
@@ -59,7 +59,7 @@ export default function Navbar() {
 						borderRadius={'4px'}
 						fontWeight={600}
 						color={'#2364aa'}
-						bg={'white'}
+						bg={'white.50'}
 						href={'#'}
 						_hover={{
 							bg: 'blue.50',
@@ -75,7 +75,7 @@ export default function Navbar() {
 						borderRadius={'4px'}
 						fontWeight={600}
 						color={'#2364aa'}
-						bg={'white'}
+						bg={'white.50'}
 						href={'#'}
 						_hover={{
 							bg: 'blue.50',
@@ -92,7 +92,7 @@ export default function Navbar() {
 						}
 						variant={'ghost'}
 						aria-label={'Toggle Navigation'}
-						color={'white'}
+						color={'white.50'}
 						_hover={{
 							bg: 'none',
 						}}

@@ -34,7 +34,7 @@ export default function Hero() {
 						<HeroHeading />
 						<Container
 							display={{ base: 'none', md: 'block' }}
-							backgroundColor={'white'}
+							backgroundColor={'white.50'}
 							py={'1rem'}
 							borderRadius={useBreakpointValue({ md: '.25rem' })}
 							mb={useBreakpointValue({ md: '7em' })}
@@ -59,7 +59,12 @@ export default function Hero() {
 					</Flex>
 				</Flex>
 			</Container>
-			<Container w={'full'} bg={'white'} py={'1.75em'} display={{ md: 'none' }}>
+			<Container
+				w={'full'}
+				bg={'white.50'}
+				py={'1.75em'}
+				display={{ md: 'none' }}
+			>
 				<Timeslots />
 			</Container>
 		</Box>

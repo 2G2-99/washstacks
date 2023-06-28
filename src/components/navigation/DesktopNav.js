@@ -47,6 +47,13 @@ export default function DesktopNav({ color, hoverColor }) {
 								<Stack>
 									{navItem.children.map((child) => (
 										<DesktopSubNav key={child.id} {...child} />
+										/**
+										 * * {...child}
+										 * is an alternative to write all the props:
+										 * * label={child.label}
+										 * * subLabel={child.subLabel}
+										 * * href={child.href}
+										 */
 									))}
 								</Stack>
 							</PopoverContent>

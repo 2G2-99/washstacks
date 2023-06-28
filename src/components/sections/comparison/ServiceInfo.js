@@ -1,7 +1,7 @@
 import { Show, Text, Icon, VStack, HStack, Flex } from '@chakra-ui/react';
 
 export default function ServiceInfo({
-	bgColor = 'white',
+	bgColor = 'white.50',
 	text,
 	textAlign = 'center',
 	fontWeight,

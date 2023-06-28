@@ -58,7 +58,7 @@ export default function AboutUs() {
 				</Container>
 			</Box>
 			<Banner />
-			<Box w="full" py={40} color={'white'} bg="blue.400">
+			<Box w="full" py={40} color={'white.50'} bg="blue.400">
 				<Container>
 					<VStack>
 						<Icon as={BsFillChatQuoteFill} boxSize={8} mb={4} />
