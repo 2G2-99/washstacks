@@ -24,7 +24,7 @@ export default function Services() {
 		>
 			{/* Column Headers */}
 			<GridItem
-				bg={'white'}
+				bg={'white.50'}
 				w={'168px'}
 				h={'130px'}
 				borderTopLeftRadius={'md'}
@@ -65,7 +65,7 @@ export default function Services() {
 			/>
 			{/* First Row */}
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				text={'What is included'}
 				textAlign={'left'}
 				fontWeight={'bold'}
@@ -74,7 +74,7 @@ export default function Services() {
 				justify={'normal'}
 			/>
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				text={'WASH + TUMBLE +DRY'}
 				fontSize={'.75rem'}
 				fontWeight={'bold'}
@@ -82,28 +82,28 @@ export default function Services() {
 				text2={'INCLUDES'}
 			/>
 			<ServiceInfo
-				bgColor="shade"
+				bgColor="white.100"
 				text={'WASH + TUMBLE-DRY + IRONING'}
 				fontSize={'.75rem'}
 				fontWeight={'bold'}
 				smText={'INCLUDES'}
 			/>
 			<ServiceInfo
-				bgColor="shade"
+				bgColor="white.100"
 				text={'DRY CLEANING + IRONING'}
 				fontSize={'.75rem'}
 				fontWeight={'bold'}
 				smText={'INCLUDES'}
 			/>
 			<ServiceInfo
-				bgColor="shade"
+				bgColor="white.100"
 				text={'IRONING'}
 				fontSize={'.75rem'}
 				fontWeight={'bold'}
 				smText={'INCLUDES'}
 			/>
 			<ServiceInfo
-				bgColor="shade"
+				bgColor="white.100"
 				text={'CUSTOM CLEANING'}
 				fontSize={'.75rem'}
 				fontWeight={'bold'}
@@ -140,7 +140,7 @@ export default function Services() {
 			/>
 			{/* Third Row */}
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				text={'Service time'}
 				textAlign={'left'}
 				fontWeight={'bold'}
@@ -149,30 +149,30 @@ export default function Services() {
 				justify={'normal'}
 			/>
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				icon={BsClockHistory}
 				text={'24h*'}
 				fontWeight={'bold'}
 			/>
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				icon={BsClockHistory}
 				text={'24h*'}
 				fontWeight={'bold'}
 			/>
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				icon={BsClockHistory}
 				text={'24h*'}
 				fontWeight={'bold'}
 			/>
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				icon={BsClockHistory}
 				text={'24h*'}
 				fontWeight={'bold'}
 			/>
-			<ServiceInfo bgColor={'shade'} text={'Up to 3 days'} />
+			<ServiceInfo bgColor={'white.100'} text={'Up to 3 days'} />
 			{/* Fourth Row */}
 			<ServiceInfo
 				text={'Pricing'}
@@ -192,7 +192,7 @@ export default function Services() {
 			<ServiceInfo text={'PRICE PER ITEM from £10.95'} fontSize={'.875rem'} />
 			{/* Fifth Row */}
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				text={'Delivery'}
 				textAlign={'left'}
 				fontWeight={'bold'}
@@ -200,11 +200,11 @@ export default function Services() {
 				color={'blue.400'}
 				justify={'normal'}
 			/>
-			<ServiceInfo bgColor={'shade'} text={'FREE'} fontWeight={'bold'} />
-			<ServiceInfo bgColor={'shade'} text={'FREE'} fontWeight={'bold'} />
-			<ServiceInfo bgColor={'shade'} text={'FREE'} fontWeight={'bold'} />
-			<ServiceInfo bgColor={'shade'} text={'FREE'} fontWeight={'bold'} />
-			<ServiceInfo bgColor={'shade'} text={'FREE'} fontWeight={'bold'} />
+			<ServiceInfo bgColor={'white.100'} text={'FREE'} fontWeight={'bold'} />
+			<ServiceInfo bgColor={'white.100'} text={'FREE'} fontWeight={'bold'} />
+			<ServiceInfo bgColor={'white.100'} text={'FREE'} fontWeight={'bold'} />
+			<ServiceInfo bgColor={'white.100'} text={'FREE'} fontWeight={'bold'} />
+			<ServiceInfo bgColor={'white.100'} text={'FREE'} fontWeight={'bold'} />
 			{/* Sixth Row */}
 			<ServiceInfo
 				text={'Items returned'}
@@ -229,7 +229,7 @@ export default function Services() {
 			/>
 			{/* Seventh Row */}
 			<ServiceInfo
-				bgColor={'shade'}
+				bgColor={'white.100'}
 				text={'Eco friendly'}
 				textAlign={'left'}
 				fontWeight={'bold'}
@@ -237,14 +237,34 @@ export default function Services() {
 				color={'blue.400'}
 				justify={'normal'}
 			/>
-			<ServiceInfo bgColor={'shade'} icon={RiLeafFill} color="turquoise.100" />
-			<ServiceInfo bgColor={'shade'} icon={RiLeafFill} color="turquoise.100" />
-			<ServiceInfo bgColor={'shade'} icon={RiLeafFill} color="turquoise.100" />
-			<ServiceInfo bgColor={'shade'} icon={RiLeafFill} color="turquoise.100" />
-			<ServiceInfo bgColor={'shade'} icon={RiLeafFill} color="turquoise.100" />
+			<ServiceInfo
+				bgColor={'white.100'}
+				icon={RiLeafFill}
+				color="turquoise.100"
+			/>
+			<ServiceInfo
+				bgColor={'white.100'}
+				icon={RiLeafFill}
+				color="turquoise.100"
+			/>
+			<ServiceInfo
+				bgColor={'white.100'}
+				icon={RiLeafFill}
+				color="turquoise.100"
+			/>
+			<ServiceInfo
+				bgColor={'white.100'}
+				icon={RiLeafFill}
+				color="turquoise.100"
+			/>
+			<ServiceInfo
+				bgColor={'white.100'}
+				icon={RiLeafFill}
+				color="turquoise.100"
+			/>
 			{/* Bottom */}
 			<GridItem
-				bg={'white'}
+				bg={'white.50'}
 				w={'168px'}
 				h={'64px'}
 				borderBottomLeftRadius={'md'}

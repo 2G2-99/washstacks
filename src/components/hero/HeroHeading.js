@@ -5,7 +5,7 @@ export default function HeroHeading() {
 		<Heading
 			as={'h1'}
 			mb={'1rem'}
-			color={'white'}
+			color={'white.50'}
 			lineHeight={1}
 			letterSpacing={'wider'}
 			fontSize={useBreakpointValue({

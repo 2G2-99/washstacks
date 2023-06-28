@@ -5,7 +5,7 @@ export default function () {
 		<Flex
 			align={'center'}
 			justify={'center'}
-			bg={'white'}
+			bg={'white.50'}
 			w={'168px'}
 			h={'64px'}
 			borderBottomLeftRadius={'md'}
@@ -17,7 +17,7 @@ export default function () {
 				bg={'blue.200'}
 				_hover={{ bg: 'blue.100' }}
 			>
-				<Text fontWeight={'bold'} color={'white'}>
+				<Text fontWeight={'bold'} color={'white.50'}>
 					Book now
 				</Text>
 			</Button>

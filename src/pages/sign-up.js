@@ -48,7 +48,7 @@ export default function SignupCard() {
 								<Icon
 									as={BsApple}
 									display={'block'}
-									fill={'white'}
+									fill={'white.50'}
 									fontSize={'2xl'}
 								/>
 							</Button>
@@ -56,7 +56,7 @@ export default function SignupCard() {
 								<Icon
 									as={BsFacebook}
 									display={'block'}
-									fill={'white'}
+									fill={'white.50'}
 									fontSize={'2xl'}
 								/>
 							</Button>
@@ -91,7 +91,7 @@ export default function SignupCard() {
 									loadingText="Submitting"
 									size="lg"
 									bg={'blue.400'}
-									color={'white'}
+									color={'white.50'}
 									_hover={{
 										bg: 'blue.500',
 									}}

@@ -5,7 +5,7 @@ export default function ServiceComparison() {
 	return (
 		<VStack bg={'blue.400'} pt={'5.625rem'} pb={'2rem'}>
 			<Container id={'service-comparison_heading'} width={'full'} mb={'4rem'}>
-				<Heading as={'h2'} textAlign={'center'} color={'white'}>
+				<Heading as={'h2'} textAlign={'center'} color={'white.50'}>
 					<Text as={'span'} color={'yellow.100'}>
 						Compare{' '}
 					</Text>

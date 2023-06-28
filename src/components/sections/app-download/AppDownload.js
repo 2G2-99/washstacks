@@ -8,7 +8,7 @@ import GetAppCard from './GetAppCard';
 
 export default function () {
 	return (
-		<Box py={20}>
+		<Box py={20} bg={'white.100'}>
 			<Container maxW={'container.lg'}>
 				<Flex
 					gap={{ base: 10, md: 0 }}

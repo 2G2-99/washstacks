@@ -18,7 +18,7 @@ export default function DesktopNav({ color, hoverColor }) {
 	return (
 		<HStack spacing={4}>
 			{navItems.map((navItem) => (
-				<Box key={navItem.label}>
+				<Box key={navItem.id}>
 					<Popover trigger={'hover'} placement={'bottom-start'}>
 						<PopoverTrigger>
 							<Link
@@ -39,14 +39,21 @@ export default function DesktopNav({ color, hoverColor }) {
 							<PopoverContent
 								border={0}
 								boxShadow={'lg'}
-								bg={'white'}
+								bg={'white.50'}
 								p={4}
 								rounded={'md'}
 								minW={'sm'}
 							>
 								<Stack>
 									{navItem.children.map((child) => (
-										<DesktopSubNav key={child.label} {...child} />
+										<DesktopSubNav key={child.id} {...child} />
+										/**
+										 * * {...child}
+										 * is an alternative to write all the props:
+										 * * label={child.label}
+										 * * subLabel={child.subLabel}
+										 * * href={child.href}
+										 */
 									))}
 								</Stack>
 							</PopoverContent>
