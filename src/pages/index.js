@@ -8,6 +8,8 @@ import AboutUs from '@/components/sections/about/AboutUs';
 import AppDownload from '@/components/sections/app-download/AppDownload';
 import { Divider } from '@chakra-ui/react';
 import FAQ from '@/components/sections/faq/FAQ';
+import Team from '@/components/sections/dev-team/Team';
+import Banner from '@/components/upsell-banner/Banner';
 
 export default function Home() {
 	return (
@@ -20,9 +22,12 @@ export default function Home() {
 			<ServiceComparison />
 			<Reviews />
 			<AboutUs />
+			<Banner />
+			<Team />
 			<AppDownload />
 			<Divider borderColor={'grey'} />
 			<FAQ />
+			<Banner />
 		</Layout>
 	);
 }

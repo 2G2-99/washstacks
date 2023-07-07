@@ -31,7 +31,7 @@ export default function FAQ() {
 						/>
 					))}
 				</VStack>
-				<Center mt={8} fontSize={'md'} fontWeight={'bold'} color={'blue.200'}>
+				<Center mt={8} fontSize={'lg'} fontWeight={'bold'} color={'blue.200'}>
 					<Link href={'#'} _hover={{ textDecoration: 'none' }}>
 						Visit our help center
 					</Link>
