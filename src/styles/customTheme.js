@@ -14,7 +14,6 @@ export const roboto_flex = Roboto_Flex({
 const customTheme = extendTheme({
 	colors: {
 		shade: '#e6f4fe',
-		// white: '#F7F7F7',
 		white: {
 			50: '#FFFFFF',
 			100: '#F7FAFC',
