@@ -1,7 +1,8 @@
-import { Box, Container, Text, VStack } from '@chakra-ui/react';
+import { Box, Center, Container, Text, VStack } from '@chakra-ui/react';
 import FAQDropdown from './FAQDropdown';
 import { useState } from 'react';
 import questions from '../../../data/questions.json';
+import { Link } from '@chakra-ui/next-js';
 
 export default function FAQ() {
 	const firstQuestionId = questions.length > 0 ? questions[0].id : -1;
@@ -30,28 +31,12 @@ export default function FAQ() {
 						/>
 					))}
 				</VStack>
+				<Center mt={8} fontSize={'md'} fontWeight={'bold'} color={'blue.200'}>
+					<Link href={'#'} _hover={{ textDecoration: 'none' }}>
+						Visit our help center
+					</Link>
+				</Center>
 			</Container>
 		</Box>
 	);
 }
-
-/**
- * *How to close drawer that is already open
-	const [openId, setOpenId] = useState(-1);
-
-	const handleToggle = (id) => {
-		if (openId === id) {
-			setOpenId(-1); // If clicked dropdown is currently active, collapse it
-		} else {
-			setOpenId(id); // Activate the clicked dropdown
-		}
-	};
- */
-
-/**
-	 * const [open, setOpen] = useState(false);
-	 *
-	 * const handleClick = () => {
-			setIsOpen(!isOpen);
-		};
-	 */
