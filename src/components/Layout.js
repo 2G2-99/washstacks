@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import Navbar from './navigation/Navbar';
 import { Link } from '@chakra-ui/next-js';
-import Footer from './Footer';
+import Footer from './footer/Footer';
 import { useEffect, useState } from 'react';
 import ScrolledNavbar from './navigation/ScrolledNavbar';
 

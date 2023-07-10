@@ -10,6 +10,7 @@ import { Divider } from '@chakra-ui/react';
 import FAQ from '@/components/sections/faq/FAQ';
 import Team from '@/components/sections/dev-team/Team';
 import Banner from '@/components/upsell-banner/Banner';
+import UpsellWrapper from '@/components/footer/landing/upsell/UpsellWrapper';
 
 export default function Home() {
 	return (
@@ -28,6 +29,7 @@ export default function Home() {
 			<Divider borderColor={'grey'} />
 			<FAQ />
 			<Banner />
+			<UpsellWrapper />
 		</Layout>
 	);
 }
