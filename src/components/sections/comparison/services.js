@@ -5,6 +5,7 @@ import { WiStrongWind } from 'react-icons/wi';
 import { BsClockHistory } from 'react-icons/bs';
 import { TbMoneybag, TbHanger } from 'react-icons/tb';
 import { RiLeafFill } from 'react-icons/ri';
+import { GiPillow } from 'react-icons/gi';
 import ServiceHeader from './ServiceHeader';
 import ServiceInfo from './ServiceInfo';
 import ServiceBottom from './ServiceBottom';
@@ -60,7 +61,7 @@ export default function Services() {
 			<ServiceHeader
 				bgColor={'lighterBlue.50'}
 				bgCircle={'lighterBlue.100'}
-				icon1={MdOutlineIron}
+				icon1={GiPillow}
 				text={'Duvets & Bulky Items'}
 			/>
 			{/* First Row */}

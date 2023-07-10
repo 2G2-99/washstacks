@@ -4,7 +4,7 @@ import UpsellCard from './UpsellCard';
 export default function OtherContent() {
 	return (
 		<Box py={14}>
-			<Container maxW={'max-content'}>
+			<Container maxW={'container.xl'}>
 				<Heading as={'h5'} fontSize={'lg'} textAlign={'left'}>
 					Get the most out of WashStacks
 				</Heading>

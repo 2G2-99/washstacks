@@ -49,7 +49,7 @@ export default function () {
 							<Image
 								src={'/img/washstacks-app.png'}
 								minW={72}
-								minH={64}
+								minH={56}
 								alt="Screenshot of the WashStacks app form"
 							/>
 						</Container>

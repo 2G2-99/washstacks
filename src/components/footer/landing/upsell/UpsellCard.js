@@ -12,9 +12,9 @@ import { FiArrowUpRight } from 'react-icons/fi';
 
 export default function UpsellCard({ image, buttonText, footerText }) {
 	return (
-		<Box mt={6}>
+		<Box mt={6} flex={1}>
 			<Link href={'#'} _hover={{ textDecoration: 'none' }}>
-				<Card w={{ base: 80, md: 452 }} minH={'72'} shadow={'none'}>
+				<Card minH={72} shadow={'none'}>
 					<CardBody
 						bgImage={image}
 						bgPosition={'center'}

@@ -6,7 +6,7 @@ import QRCode from '../../../assets/svg/brand/qr-code.svg';
 
 export default function () {
 	return (
-		<Box width={{ base: 'full', md: 'sm', lg: 'md' }} px={3}>
+		<Box width={{ base: 'full', md: 'sm', lg: 'md' }}>
 			<Flex bg={'blue.50'} rounded={'md'} p={4}>
 				<Flex flex={2} align={'flex-start'} direction={'column'} gap={4}>
 					<Flex align={'center'} justify={'flex-start'} gap={2}>
