@@ -6,28 +6,26 @@ import QRCode from '../../../assets/svg/brand/qr-code.svg';
 
 export default function () {
 	return (
-		<Flex
-			w={{ base: 'full', md: '372.66px' }}
-			h={{ base: '123.29', md: '192px' }}
-			bg={'blue.50'}
-			p={4}
-			rounded={'md'}
-		>
-			<Flex flex={2} align={'flex-start'} direction={'column'} gap={4}>
-				<Flex align={'center'} justify={'flex-start'} gap={2}>
-					<AppIcon />
-					<Text fontSize={'lg'} fontWeight={'bold'} color={'blue.400'}>
-						Get the app
-					</Text>
+		<Box width={{ base: 'full', md: 'sm', lg: 'md' }} px={3}>
+			<Flex bg={'blue.50'} rounded={'md'} p={4}>
+				<Flex flex={2} align={'flex-start'} direction={'column'} gap={4}>
+					<Flex align={'center'} justify={'flex-start'} gap={2}>
+						<AppIcon />
+						<Text fontSize={'lg'} fontWeight={'bold'} color={'blue.400'}>
+							Get the app
+						</Text>
+					</Flex>
+					<Flex align={'flex-start'} direction={{ md: 'column' }} gap={2}>
+						<AppStoreBadge />
+						<PlayStoreBadge />
+					</Flex>
 				</Flex>
-				<Flex align={'flex-start'} direction={{ md: 'column' }} gap={2}>
-					<AppStoreBadge />
-					<PlayStoreBadge />
-				</Flex>
+				<Show above="md">
+					<Box p={0.5} bgColor={'white'} rounded={'md'}>
+						<QRCode />
+					</Box>
+				</Show>
 			</Flex>
-			<Show above="md">
-				<QRCode />
-			</Show>
-		</Flex>
+		</Box>
 	);
 }

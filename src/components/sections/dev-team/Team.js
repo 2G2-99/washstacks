@@ -1,4 +1,3 @@
-import { Image } from '@chakra-ui/next-js';
 import {
 	Box,
 	Container,
@@ -9,6 +8,7 @@ import {
 	Spacer,
 	Text,
 	VStack,
+	Image,
 } from '@chakra-ui/react';
 import { BsFillChatQuoteFill } from 'react-icons/bs';
 
