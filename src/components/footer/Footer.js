@@ -2,44 +2,64 @@ import {
 	Box,
 	Container,
 	Stack,
-	SimpleGrid,
 	Text,
-	Link,
 	VisuallyHidden,
-	chakra,
-	useColorModeValue,
 	Flex,
 	Divider,
+	Icon,
+	Show,
+	Hide,
 } from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
+import {
+	FaTwitter,
+	FaInstagram,
+	FaLinkedinIn,
+	FaFacebookF,
+} from 'react-icons/fa';
 
 import AppStoreBadge from '../../assets/svg/app-store-black.svg';
 import PlayStoreBadge from '../../assets/svg/google-play-black.svg';
-import Logo from '../../assets/svg/brand/logo/logo.svg';
+import Logo from '../../assets/svg/brand/logo/v1.svg';
 import LinksTree from './landing/links/LinksTree';
 import Upsell from './landing/upsell/UpsellWrapper';
+import Locations from './landing/locations/LocationsWrapper';
+import { Link } from '@chakra-ui/next-js';
 
-const SocialButton = ({ children, label, href }) => {
+const SocialButton = ({ icon, label, href }) => {
 	return (
-		<chakra.button
-			bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+		<Link
+			bgColor={'grey'}
 			rounded={'full'}
-			w={8}
-			h={8}
+			p={1}
 			cursor={'pointer'}
-			as={'a'}
 			href={href}
-			display={'inline-flex'}
-			alignItems={'center'}
-			justifyContent={'center'}
-			transition={'background 0.3s ease'}
-			_hover={{
-				bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-			}}
 		>
 			<VisuallyHidden>{label}</VisuallyHidden>
-			{children}
-		</chakra.button>
+			<Icon as={icon} display={'block'} color={'white'} boxSize={5} p={0.5} />
+		</Link>
+	);
+};
+
+const Block = ({ stackDirection, heading, children }) => {
+	return (
+		<Box flex={1}>
+			<Stack align={'start'} direction={stackDirection}>
+				<Text
+					color={'grey'}
+					textAlign={'left'}
+					fontSize={'xs'}
+					fontWeight={'bold'}
+				>
+					{heading}
+				</Text>
+				<Flex direction={'row'} justify={'start'} width={'full'} gap={2.5}>
+					{children}
+				</Flex>
+			</Stack>
+			<Hide above="lg">
+				<Divider my={8} borderColor={'grey'} />
+			</Hide>
+		</Box>
 	);
 };
 
@@ -59,7 +79,48 @@ export default function Footer({ home = false }) {
 				</Box>
 			</Container>
 
-			{/* <Box py={10}>
+			<Box py={14} bgColor={'white.100'}>
+				<Container
+					maxW={{ base: '60ch', md: 'container.md', lg: 'container.xl' }}
+				>
+					<Locations />
+				</Container>
+			</Box>
+
+			<Container
+				maxW={{ base: '60ch', md: 'container.md', lg: 'container.xl' }}
+				py={10}
+			>
+				<Stack direction={{ lg: 'row' }}>
+					<Block heading={'Powered by'}>
+						{<Icon as={Logo} display={'block'} boxSize={'max-content'} />}
+					</Block>
+					<Block heading={'Download our mobile app'}>
+						<AppStoreBadge />
+						<PlayStoreBadge />
+					</Block>
+					<Block heading={'Follow us'}>
+						<SocialButton icon={FaFacebookF} label={'Facebook'} href={'#'} />
+						<SocialButton icon={FaTwitter} label={'Twitter'} href={'#'} />
+						<SocialButton icon={FaInstagram} label={'Instagram'} href={'#'} />
+						<SocialButton icon={FaLinkedinIn} label={'LinkedIn'} href={'#'} />
+					</Block>
+				</Stack>
+
+				<Show above="lg">
+					<Divider borderColor={'grey'} my={8} />
+				</Show>
+
+				<Text color={'grey'} fontSize={'sm'} textAlign={'center'}>
+					All rights reserved. © WashStacks 2023.
+				</Text>
+			</Container>
+		</Box>
+	);
+}
+
+/**
+ * <Box py={10}>
 				<Flex
 					align={'center'}
 					_before={{
@@ -106,7 +167,5 @@ export default function Footer({ home = false }) {
 						</Stack>
 					</Container>
 				</Box>
-			</Box> */}
-		</Box>
-	);
-}
+			</Box>
+ */
