@@ -29,7 +29,7 @@ export default function Home() {
 			<Divider borderColor={'grey'} />
 			<FAQ />
 			<Banner />
-			<UpsellWrapper />
+			{/* <UpsellWrapper /> */}
 		</Layout>
 	);
 }

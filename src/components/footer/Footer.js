@@ -9,6 +9,7 @@ import {
 	chakra,
 	useColorModeValue,
 	Flex,
+	Divider,
 } from '@chakra-ui/react';
 import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
@@ -16,6 +17,7 @@ import AppStoreBadge from '../../assets/svg/app-store-black.svg';
 import PlayStoreBadge from '../../assets/svg/google-play-black.svg';
 import Logo from '../../assets/svg/brand/logo/logo.svg';
 import LinksTree from './landing/links/LinksTree';
+import Upsell from './landing/upsell/UpsellWrapper';
 
 const SocialButton = ({ children, label, href }) => {
 	return (
@@ -41,14 +43,22 @@ const SocialButton = ({ children, label, href }) => {
 	);
 };
 
-export default function Footer() {
+export default function Footer({ home = false }) {
 	return (
 		<Box>
 			<Container
-				maxW={{ base: 'container.sm', md: 'container.md', lg: 'container.xl' }}
+				maxW={{ base: '60ch', md: 'container.md', lg: 'container.xl' }}
+				py={14}
 			>
-				<LinksTree />
+				<Box pb={10}>
+					<Upsell />
+				</Box>
+				<Divider borderColor={'grey'} />
+				<Box pt={10}>
+					<LinksTree />
+				</Box>
 			</Container>
+
 			{/* <Box py={10}>
 				<Flex
 					align={'center'}
