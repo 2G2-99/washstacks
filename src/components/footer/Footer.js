@@ -15,14 +15,7 @@ import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 import AppStoreBadge from '../../assets/svg/app-store-black.svg';
 import PlayStoreBadge from '../../assets/svg/google-play-black.svg';
 import Logo from '../../assets/svg/brand/logo/logo.svg';
-
-const ListHeader = ({ children }) => {
-	return (
-		<Text fontWeight={'500'} fontSize={'lg'} mb={2}>
-			{children}
-		</Text>
-	);
-};
+import LinksTree from './landing/links/LinksTree';
 
 const SocialButton = ({ children, label, href }) => {
 	return (
@@ -50,43 +43,13 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function Footer() {
 	return (
-		<Box
-			bg={useColorModeValue('gray.50', 'gray.900')}
-			color={useColorModeValue('gray.700', 'gray.200')}
-		>
-			<Container as={Stack} maxW={'6xl'} py={10}>
-				<SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
-					<Stack align={'flex-start'}>
-						<ListHeader>Company</ListHeader>
-						<Link href={'#'}>About Us</Link>
-						<Link href={'#'}>Blog</Link>
-						<Link href={'#'}>Careers</Link>
-						<Link href={'#'}>Contact Us</Link>
-					</Stack>
-
-					<Stack align={'flex-start'}>
-						<ListHeader>Support</ListHeader>
-						<Link href={'#'}>Help Center</Link>
-						<Link href={'#'}>Safety Center</Link>
-						<Link href={'#'}>Community Guidelines</Link>
-					</Stack>
-
-					<Stack align={'flex-start'}>
-						<ListHeader>Legal</ListHeader>
-						<Link href={'#'}>Cookies Policy</Link>
-						<Link href={'#'}>Privacy Policy</Link>
-						<Link href={'#'}>Terms of Service</Link>
-						<Link href={'#'}>Law Enforcement</Link>
-					</Stack>
-
-					<Stack align={'flex-start'}>
-						<ListHeader>Install App</ListHeader>
-						<AppStoreBadge />
-						<PlayStoreBadge />
-					</Stack>
-				</SimpleGrid>
+		<Box>
+			<Container
+				maxW={{ base: 'container.sm', md: 'container.md', lg: 'container.xl' }}
+			>
+				<LinksTree />
 			</Container>
-			<Box py={10}>
+			{/* <Box py={10}>
 				<Flex
 					align={'center'}
 					_before={{
@@ -133,7 +96,7 @@ export default function Footer() {
 						</Stack>
 					</Container>
 				</Box>
-			</Box>
+			</Box> */}
 		</Box>
 	);
 }

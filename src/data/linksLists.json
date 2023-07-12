@@ -1,0 +1,96 @@
+[
+	{
+		"id": "01",
+		"label": "Explore",
+		"links": [
+			{
+				"id": "01",
+				"label": "How it works",
+				"link": "#"
+			},
+			{
+				"id": "02",
+				"label": "Prices & Services",
+				"link": "#"
+			},
+			{
+				"id": "01",
+				"label": "Help Center",
+				"link": "#"
+			}
+		]
+	},
+	{
+		"id": "02",
+		"label": "Our solutions",
+		"links": [
+			{
+				"id": "01",
+				"label": "Laundry",
+				"link": "#"
+			},
+			{
+				"id": "02",
+				"label": "Dry cleaning",
+				"link": "#"
+			},
+			{
+				"id": "01",
+				"label": "Student discounts",
+				"link": "#"
+			}
+		]
+	},
+	{
+		"id": "03",
+		"label": "Our company",
+		"links": [
+			{
+				"id": "01",
+				"label": "About WashStacks",
+				"link": "#"
+			},
+			{
+				"id": "02",
+				"label": "Blog",
+				"link": "#"
+			},
+			{
+				"id": "03",
+				"label": "Locations",
+				"link": "#"
+			},
+			{
+				"id": "04",
+				"label": "Customer reviews",
+				"link": "#"
+			},
+			{
+				"id": "05",
+				"label": "Sustainability",
+				"link": "#"
+			}
+		]
+	},
+	{
+		"id": "04",
+		"label": "Work with us",
+		"links": [
+			{
+				"id": "01",
+				"label": "Careers",
+				"link": "#"
+			},
+			{
+				"id": "02",
+				"label": "PArtner drivers",
+				"link": "#"
+			},
+			{
+				"id": "01",
+				"label": "Cleaning partners",
+				"link": "#"
+			}
+		]
+	}
+]

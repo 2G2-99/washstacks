@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import Content from './Content';
 import BenefitsIconItem from '@/components/BenefitsIconItem';
+import ChatButton from '@/components/ChatButton';
 
 export default function Benefits({}) {
 	return (
@@ -97,23 +98,7 @@ export default function Benefits({}) {
 					'Any change in delivery times or date, or if something goes wrong, we are here. Our online customer support team will assist you day and night.'
 				}
 			>
-				<Link
-					display={'inline-block'}
-					href={'#'}
-					bg={'blue.50'}
-					borderRadius={'full'}
-					p={'.5rem'}
-					_hover={{ textDecor: 'none' }}
-				>
-					<HStack spacing={1}>
-						<Icon
-							as={IoChatbubbleEllipsesOutline}
-							boxSize={7}
-							color={'blue.300'}
-						/>
-						<Text color={'blue.300'}>Chat with us</Text>
-					</HStack>
-				</Link>
+				<ChatButton />
 			</Content>
 		</Container>
 	);
