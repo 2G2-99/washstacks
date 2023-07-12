@@ -3,8 +3,10 @@ import UpsellCard from './UpsellCard';
 
 export default function OtherContent() {
 	return (
-		<Box py={14}>
-			<Container maxW={'container.xl'}>
+		<Box pt={14}>
+			<Container
+				maxW={{ base: 'container.sm', md: 'container.md', lg: 'container.xl' }}
+			>
 				<Heading as={'h5'} fontSize={'lg'} textAlign={'left'}>
 					Get the most out of WashStacks
 				</Heading>
@@ -22,7 +24,7 @@ export default function OtherContent() {
 						footerText={'Want to get a discount code? Refer friends and earn.'}
 					/>
 				</Flex>
-				<Divider borderColor={'grey'} my={16} />
+				<Divider borderColor={'grey'} my={12} />
 			</Container>
 		</Box>
 	);
