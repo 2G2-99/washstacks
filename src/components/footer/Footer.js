@@ -18,6 +18,7 @@ import PlayStoreBadge from '../../assets/svg/google-play-black.svg';
 import Logo from '../../assets/svg/brand/logo/logo.svg';
 import LinksTree from './landing/links/LinksTree';
 import Upsell from './landing/upsell/UpsellWrapper';
+import Locations from './landing/locations/LocationsWrapper';
 
 const SocialButton = ({ children, label, href }) => {
 	return (
@@ -58,6 +59,13 @@ export default function Footer({ home = false }) {
 					<LinksTree />
 				</Box>
 			</Container>
+			<Box py={14} bgColor={'white.100'}>
+				<Container
+					maxW={{ base: '60ch', md: 'container.md', lg: 'container.xl' }}
+				>
+					<Locations />
+				</Container>
+			</Box>
 
 			{/* <Box py={10}>
 				<Flex
