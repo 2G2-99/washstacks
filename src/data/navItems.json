@@ -1,38 +1,38 @@
 [
 	{
-		"id": "01",
+		"id": 1,
 		"label": "How it works"
 	},
 	{
-		"id": "02",
+		"id": 2,
 		"label": "Prices & Services",
 		"children": [
 			{
-				"id": "01",
+				"id": 1,
 				"label": "Wash",
 				"subLabel": "For everyday laundry, bedsheets and towels",
 				"href": "#"
 			},
 			{
-				"id": "02",
+				"id": 2,
 				"label": "Wash & Iron",
 				"subLabel": "For everyday laundry that requires ironing",
 				"href": "#"
 			},
 			{
-				"id": "03",
+				"id": 3,
 				"label": "Dry Cleaning",
 				"subLabel": "For delicate items and fabrics",
 				"href": "#,"
 			},
 			{
-				"id": "04",
+				"id": 4,
 				"label": "Ironing",
 				"subLabel": "For items that are already clean",
 				"href": "#,"
 			},
 			{
-				"id": "05",
+				"id": 5,
 				"label": "Duvets & Bulky Items",
 				"subLabel": "For larger items that require extra care",
 				"href": "#,"
@@ -40,12 +40,12 @@
 		]
 	},
 	{
-		"id": "03",
+		"id": 3,
 		"label": "About us",
 		"href": "#"
 	},
 	{
-		"id": "04",
+		"id": 4,
 		"label": "FAQ",
 		"href": "#"
 	}
