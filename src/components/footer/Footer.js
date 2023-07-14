@@ -28,7 +28,7 @@ import { Link } from '@chakra-ui/next-js';
 const SocialButton = ({ icon, label, href }) => {
 	return (
 		<Link
-			bgColor={'grey'}
+			bgColor={'grey.100'}
 			rounded={'full'}
 			p={1}
 			cursor={'pointer'}
@@ -45,7 +45,7 @@ const Block = ({ stackDirection, heading, children }) => {
 		<Box flex={1}>
 			<Stack align={'start'} direction={stackDirection}>
 				<Text
-					color={'grey'}
+					color={'grey.50'}
 					textAlign={'left'}
 					fontSize={'xs'}
 					fontWeight={'bold'}
@@ -57,7 +57,7 @@ const Block = ({ stackDirection, heading, children }) => {
 				</Flex>
 			</Stack>
 			<Hide above="lg">
-				<Divider my={8} borderColor={'grey'} />
+				<Divider my={8} borderColor={'grey.50'} />
 			</Hide>
 		</Box>
 	);
@@ -73,7 +73,7 @@ export default function Footer({ home = false }) {
 				<Box pb={10}>
 					<Upsell />
 				</Box>
-				<Divider borderColor={'grey'} />
+				<Divider borderColor={'grey.50'} />
 				<Box pt={10}>
 					<LinksTree />
 				</Box>
@@ -91,7 +91,7 @@ export default function Footer({ home = false }) {
 				maxW={{ base: '60ch', md: 'container.md', lg: 'container.xl' }}
 				py={10}
 			>
-				<Stack direction={{ lg: 'row' }}>
+				<Stack direction={{ base: 'column', lg: 'row' }}>
 					<Block heading={'Powered by'}>
 						{<Icon as={Logo} display={'block'} boxSize={'max-content'} />}
 					</Block>
@@ -108,64 +108,13 @@ export default function Footer({ home = false }) {
 				</Stack>
 
 				<Show above="lg">
-					<Divider borderColor={'grey'} my={8} />
+					<Divider borderColor={'grey.50'} my={8} />
 				</Show>
 
-				<Text color={'grey'} fontSize={'sm'} textAlign={'center'}>
+				<Text color={'grey.50'} fontSize={'sm'} textAlign={'center'}>
 					All rights reserved. © WashStacks 2023.
 				</Text>
 			</Container>
 		</Box>
 	);
 }
-
-/**
- * <Box py={10}>
-				<Flex
-					align={'center'}
-					_before={{
-						content: '""',
-						borderBottom: '1px solid',
-						borderColor: 'gray.800',
-						flexGrow: 1,
-						mr: 8,
-					}}
-					_after={{
-						content: '""',
-						borderBottom: '1px solid',
-						borderColor: 'gray.800',
-						flexGrow: 1,
-						ml: 8,
-					}}
-				>
-					<Logo />
-				</Flex>
-				<Box
-					bg={useColorModeValue('gray.50', 'gray.900')}
-					color={useColorModeValue('gray.700', 'gray.200')}
-				>
-					<Container
-						as={Stack}
-						maxW={'6xl'}
-						py={4}
-						direction={{ base: 'column', md: 'row' }}
-						spacing={4}
-						justify={{ base: 'center', md: 'space-between' }}
-						align={{ base: 'center', md: 'center' }}
-					>
-						<Text>© 2022 Chakra Templates. All rights reserved</Text>
-						<Stack direction={'row'} spacing={6}>
-							<SocialButton label={'Twitter'} href={'#'}>
-								<FaTwitter />
-							</SocialButton>
-							<SocialButton label={'YouTube'} href={'#'}>
-								<FaYoutube />
-							</SocialButton>
-							<SocialButton label={'Instagram'} href={'#'}>
-								<FaInstagram />
-							</SocialButton>
-						</Stack>
-					</Container>
-				</Box>
-			</Box>
- */

@@ -7,10 +7,10 @@ function Location({ name }) {
 		<Link
 			href={'#'} // Here goes "link" for "location.link"
 			py={3}
-			color={'grey'}
+			color={'grey.100'}
 			bgColor={'white.100'}
 			border={'1px'}
-			borderColor={'grey'}
+			borderColor={'grey.50'}
 			rounded={'base'}
 			_hover={{ textDecoration: 'none' }}
 			textAlign={'center'}

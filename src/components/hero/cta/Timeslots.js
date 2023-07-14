@@ -16,7 +16,7 @@ export default function Timeslots() {
 				mb={'.25rem'}
 				fontSize={'.875rem'}
 			>
-				<Text as={'span'} color={'grey'}>
+				<Text as={'span'} color={'grey.50'}>
 					Schedule your collection in{' '}
 					<Text as={'span'} fontWeight={'bold'} color={'black'}>
 						London

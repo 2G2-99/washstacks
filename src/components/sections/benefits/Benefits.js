@@ -67,7 +67,7 @@ export default function Benefits({}) {
 			>
 				<Link href={'#'}>See how it works</Link>
 			</Content>
-			<Divider orientation="horizontal" my={'5rem'} borderColor={'grey'} />
+			<Divider orientation="horizontal" my={'5rem'} borderColor={'grey.50'} />
 			<Content
 				direction={{ base: 'column-reverse', md: 'row-reverse' }}
 				image={
@@ -84,7 +84,7 @@ export default function Benefits({}) {
 				/>
 				<BenefitsIconItem text={24} benefit={'Get your laundry back in 24h'} />
 			</Content>
-			<Divider orientation="horizontal" my={'5rem'} borderColor={'grey'} />
+			<Divider orientation="horizontal" my={'5rem'} borderColor={'grey.50'} />
 			<Content
 				direction={{ base: 'column-reverse', md: 'row' }}
 				image={

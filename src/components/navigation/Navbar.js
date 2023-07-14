@@ -25,7 +25,7 @@ export default function Navbar() {
 				py={{ base: '1.5rem', md: '2rem' }}
 				px={{ base: '1rem', md: '2.25rem' }}
 				align={'center'}
-				background={'blue.200'}
+				bgColor={'blue.200'}
 			>
 				<Box mr={{ lg: '10' }}>
 					<Link href={'/'}>
@@ -45,7 +45,7 @@ export default function Navbar() {
 						href={'/login'}
 						_hover={{
 							textDecoration: 'none',
-							textShadow: '2.5px 2.5px #2364aa',
+							textShadow: '2.5px 2.5px blue.300',
 							transform: 'scale(1.125)',
 						}}
 						transition={'.3s ease-in-out'}
@@ -58,11 +58,12 @@ export default function Navbar() {
 						p={'.7rem 1.55rem'}
 						borderRadius={'4px'}
 						fontWeight={600}
-						color={'#2364aa'}
-						bg={'white.50'}
+						color={'blue.300'}
+						bgColor={'white.50'}
 						href={'#'}
 						_hover={{
-							bg: 'blue.50',
+							bgColor: 'blue.50',
+							color: 'blue.400',
 						}}
 						transition={'.3s ease-in-out'}
 					>
@@ -74,11 +75,11 @@ export default function Navbar() {
 						p={'.7rem'}
 						borderRadius={'4px'}
 						fontWeight={600}
-						color={'#2364aa'}
-						bg={'white.50'}
+						color={'blue.300'}
+						bgColor={'white.50'}
 						href={'#'}
 						_hover={{
-							bg: 'blue.50',
+							bgColor: 'blue.50',
 						}}
 						transition={'.3s ease-in-out'}
 					>
@@ -94,7 +95,7 @@ export default function Navbar() {
 						aria-label={'Toggle Navigation'}
 						color={'white.50'}
 						_hover={{
-							bg: 'none',
+							bgColor: 'none',
 						}}
 					/>
 				</Flex>

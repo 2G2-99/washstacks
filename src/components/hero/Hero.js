@@ -14,7 +14,7 @@ export default function Hero() {
 		<Box
 			id="hero"
 			w={'full'}
-			backgroundColor={'blue.200'}
+			bgColor={'blue.200'}
 			pt={useBreakpointValue({ base: '5.5em' })}
 		>
 			<Container
@@ -34,7 +34,7 @@ export default function Hero() {
 						<HeroHeading />
 						<Container
 							display={{ base: 'none', md: 'block' }}
-							backgroundColor={'white.50'}
+							bgColor={'white.50'}
 							py={'1rem'}
 							borderRadius={useBreakpointValue({ md: '.25rem' })}
 							mb={useBreakpointValue({ md: '7em' })}

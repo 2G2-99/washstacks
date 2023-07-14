@@ -9,7 +9,7 @@ export default function ChatButton() {
 			href={'#'}
 			bg={'white'}
 			border={'1px'}
-			borderColor={'grey'}
+			borderColor={'grey.50'}
 			borderRadius={'full'}
 			p={1.5}
 			_hover={{ textDecor: 'none' }}
