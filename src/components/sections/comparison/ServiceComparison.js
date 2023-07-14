@@ -1,5 +1,5 @@
 import { Center, Container, Heading, Text, VStack } from '@chakra-ui/react';
-import Services from './Services';
+import Services from './services';
 
 export default function ServiceComparison() {
 	return (
