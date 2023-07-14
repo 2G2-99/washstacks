@@ -1,21 +1,21 @@
 [
 	{
-		"id": "01",
+		"id": 1,
 		"name": "London",
 		"link": "/london"
 	},
 	{
-		"id": "02",
+		"id": 2,
 		"name": "Birmingham",
 		"link": "/birmingham"
 	},
 	{
-		"id": "01",
+		"id": 3,
 		"name": "Coventry",
 		"link": "/coventry"
 	},
 	{
-		"id": "01",
+		"id": 4,
 		"name": "Manchester",
 		"link": "/manchester"
 	}
