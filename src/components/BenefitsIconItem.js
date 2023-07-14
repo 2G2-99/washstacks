@@ -5,9 +5,10 @@ export default function BenefitsIconItem({
 	text,
 	benefit,
 	fontSize = 'md',
+	marginBottom = 2,
 }) {
 	return (
-		<Flex mb={'.5rem'} align={'center'}>
+		<Flex mb={marginBottom} align={'center'} flex={1}>
 			<Circle w={12} h={12} bg={'yellow.100'} mr={4}>
 				{icon ? (
 					<Icon as={icon} display={'block'} boxSize={6} />

@@ -5,8 +5,8 @@ import { PiChatCircleDotsDuotone } from 'react-icons/pi';
 export default function ChatButton() {
 	return (
 		<Link
-			display={'inline-block'}
 			href={'#'}
+			display={'inline-block'}
 			bg={'white'}
 			border={'1px'}
 			borderColor={'grey.50'}
@@ -16,7 +16,7 @@ export default function ChatButton() {
 		>
 			<HStack spacing={1}>
 				<Icon as={PiChatCircleDotsDuotone} boxSize={7} color={'blue.300'} />
-				<Text color={'blue.300'} fontSize={'xs'} fontWeight={'bold'}>
+				<Text color={'blue.400'} fontSize={'sm'} fontWeight={'extrabold'}>
 					Chat with us
 				</Text>
 			</HStack>
