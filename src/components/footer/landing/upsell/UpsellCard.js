@@ -38,7 +38,7 @@ export default function UpsellCard({ image, buttonText, footerText }) {
 					</CardBody>
 				</Card>
 			</Link>
-			<Text color={'grey'} _hover={{ textDecoration: 'none' }}>
+			<Text color={'grey.100'} _hover={{ textDecoration: 'none' }}>
 				{footerText}
 			</Text>
 		</Box>

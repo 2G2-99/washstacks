@@ -27,14 +27,14 @@ export default function Content({
 					mb={'1rem'}
 					textTransform={'uppercase'}
 					fontWeight={'bold'}
-					color={'grey'}
+					color={'grey.100'}
 				>
 					{catchphrase}
 				</Text>
 				<Heading as={'h3'} mb={'1rem'}>
 					{benefitTitle}
 				</Heading>
-				<Text color={'grey'} mb={'1rem'}>
+				<Text color={'grey.100'} mb={'1rem'}>
 					{benefitText}
 				</Text>
 				{children}

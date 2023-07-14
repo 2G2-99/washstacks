@@ -35,7 +35,7 @@ export default function FAQDropdown({
 					pt={6}
 					pl={12}
 					alignSelf={'self-start'}
-					color={'grey'}
+					color={'grey.100'}
 					bg={'white.100'}
 				>
 					{bodyText}

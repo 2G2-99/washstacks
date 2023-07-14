@@ -42,7 +42,7 @@ export default function Slot({ url, id, icon, header, timeslot }) {
 						className="slot-header"
 						textTransform={'uppercase'}
 						fontSize={'.75rem'}
-						color={'grey'}
+						color={'grey.50'}
 						_groupHover={{ color: 'blue.300' }}
 					>
 						<Center mr={'.25rem'}>

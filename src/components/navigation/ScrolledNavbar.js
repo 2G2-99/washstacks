@@ -22,8 +22,7 @@ export default function ScrolledNavbar() {
 				className="scrolled--navbar"
 				as={'nav'}
 				minH={'60px'}
-				py={{ base: '1.5rem', md: '2rem' }}
-				px={{ base: '1rem', md: '2.25rem' }}
+				p={4}
 				align={'center'}
 				background={'white.50'}
 				boxShadow={'xl'}
