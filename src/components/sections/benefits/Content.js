@@ -4,6 +4,8 @@ export default function Content({
 	direction,
 	image,
 	fallbackImage,
+	paddingImageOnLeft,
+	paddingImageOnRight,
 	marginOnLeft,
 	marginOnRight,
 	catchphrase,
@@ -12,13 +14,19 @@ export default function Content({
 	children,
 }) {
 	return (
-		<Flex direction={direction}>
-			<Box w={{ md: '50%' }}>
-				<Image src={image} fallbackSrc={fallbackImage} />
-			</Box>
-			<Box
-				w={{ md: '50%' }}
-				px={'10px'}
+		<Flex direction={direction} align={'center'}>
+			<Flex flex={1.25} pl={paddingImageOnLeft} pr={paddingImageOnRight}>
+				<Image
+					src={image}
+					fallbackSrc={fallbackImage}
+					pl={paddingImageOnLeft}
+					pr={paddingImageOnRight}
+				/>
+			</Flex>
+			<Flex
+				flex={0.75}
+				direction={'column'}
+				px={2.5}
 				ml={marginOnLeft}
 				mr={marginOnRight}
 				mb={'3rem'}
@@ -38,7 +46,7 @@ export default function Content({
 					{benefitText}
 				</Text>
 				{children}
-			</Box>
+			</Flex>
 		</Flex>
 	);
 }
