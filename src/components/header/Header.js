@@ -28,10 +28,10 @@ export default function Header({ home = false }) {
 			w="100%"
 			zIndex={10}
 		>
-			{home && isScrolled === 0 ? (
+			{home && isScrolled <= 0 ? (
 				<Navbar />
 			) : (
-				<Slide in={isScrolled !== 0} direction="top">
+				<Slide in={isScrolled > 0} direction="top">
 					<ScrolledNavbar />
 				</Slide>
 			)}
