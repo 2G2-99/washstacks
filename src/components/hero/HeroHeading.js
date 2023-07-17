@@ -6,12 +6,11 @@ export default function HeroHeading() {
 			as={'h1'}
 			mb={8}
 			color={'white.50'}
-			lineHeight={1}
+			lineHeight={'none'}
 			fontSize={useBreakpointValue({
 				base: '4xl',
 				sm: '5xl',
-				md: '6xl',
-				xl: '7xl',
+				md: '7xl',
 			})}
 		>
 			Laundry & dry cleaning with 24h delivery

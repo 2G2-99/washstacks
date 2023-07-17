@@ -15,7 +15,7 @@ export default function Hero() {
 			id="hero"
 			w={'full'}
 			bgColor={'blue.200'}
-			pt={useBreakpointValue({ base: 32 })}
+			pt={useBreakpointValue({ base: 20, md: 28 })}
 		>
 			<Container
 				maxW={useBreakpointValue({
