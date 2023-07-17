@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<Layout home>
 			<Head>
-				<meta charset="UTF-8" />
+				<meta charSet="UTF-8" />
 				<link rel="icon" type="image/svg+xml" href="/svg/app_icon.svg" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<title>WashStacks</title>
