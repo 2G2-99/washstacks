@@ -27,8 +27,8 @@ Click here: [WashStacks](https://washstacks.vercel.app/)
 
 ##  Build
 
-> Next.js
-> Chakra UI
+> Next.js -
+> Chakra UI -
 > Figma
 
 ## Credits
