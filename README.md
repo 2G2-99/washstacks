@@ -5,7 +5,7 @@
 ## Description
 
 WashStacks is a website that offers a service of collection and delivery of
-different laundry and dry cleaning solutions from the comfort of home.
+different laundry and dry cleaning solutions from the comfort of home. Whis site is a replica of [Laundryheap's](https://www.laundryheap.co.uk/) website.
 
 ## Table of contents
 
@@ -15,6 +15,7 @@ different laundry and dry cleaning solutions from the comfort of home.
 - [Questions](#questions)
 
 ## Screenshot
+![Screenshot-WashStacks](https://github.com/2G2-99/washstacks/assets/79936466/91a12834-2aea-40a0-897a-550729a25285)
 
 ## Live demo
 
